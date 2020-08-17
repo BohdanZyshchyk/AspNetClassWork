@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">*@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1 class="text-center">My book Collection</h1>
+        <div class="container">
+            <div class="row">
+                @{ int i = 0;}
+                @foreach (WebApplication1.Models.Book item in ViewBag.Books)
+                {
+                    <div class="col-6 col-md-3">
+                        <div class="card my-card " onclick="goToDetail(@(i++))">
+                            <div class="card-header">@item.Title</div>
+                            <div class="card-body">@item.Author</div>
+                            <div class="card-title">@item.Page</div>
+                            <div class="card-footer">@item.Year</div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/script.js"></script>
+</body>
+</html>

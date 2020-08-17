@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Game store</h1>
+        <p class="lead">This is a amazing marketplace.</p>
+    </div>
+</div>
+<div class="container mycontainer">
+    <div class="row">
+        @foreach (WebApplication1.Models.Game item in ViewBag.Games)
+        {
+            <div class=" col-md-3 col-lg-4">
+                <div class="card mb-4 mycard">
+                    <img class="card-img-top" src="@item.Image" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Descroption</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="font-weight-bold">Developer:</span> @item.Developer.Name</li>
+                        <li class="list-group-item"><span class="font-weight-bold">Genre:</span>@item.Genre.Name</li>
+                        <li class="list-group-item"><span class="font-weight-bold">Year:</span>@item.Year</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="/Games/Details?id=@item.Id" class="btn btn-primary card-link">Show more...</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

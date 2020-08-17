@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@foreach (QuestRoom.Models.QRoom item in ViewBag.Quests)
+{
+    <div class="jumbotron jumbotron-fluid" style="background-image:url(@item.Images.FirstOrDefault().ImageUrl">
+        <div class="container">
+            <h1 class="text-center display-4">@item.Name</h1>
+        </div>
+    </div>
+    <div class="container mycontainer">
+        <div class="row">
+            <div class=" col-md-4 col-lg-4">
+                <h3>Gallery</h3>
+                @foreach (QuestRoom.Models.Image image in item.Images)
+                {
+                    <img class="gallery-img" src="@image.ImageUrl" alt="Alternate Text" />
+                }
+            </div>
+            <div class=" col-md-4 col-lg-4">
+                <h3>Overview</h3>
+                <p>@item.Description</p>
+            </div>
+            <div class=" col-md-4 col-lg-4">
+                <div>
+                    <i></i>
+                    <h3>Difficulty</h3>
+                    <span>@item.Difficulty</span>
+                </div>
+                <div>
+                    <i></i>
+                    <h3>Duration</h3>
+                    <span>@item.TimeMinutes</span>
+                </div>
+                <div>
+                    <i></i>
+                    <h3>Group Size</h3>
+                    <span>@item.NumbPlayers</span>
+                </div>
+                <div>
+                    <i></i>
+                    <h3>Escap Rate</h3>
+                    <span> @item.Rating</span>
+                    @for (int i = 0; i < @item.Rating; i++)
+                    {
+                        <i class="far fa-star"></i>
+                    }
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+}

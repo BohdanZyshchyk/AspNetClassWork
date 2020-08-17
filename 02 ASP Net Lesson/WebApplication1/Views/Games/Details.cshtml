@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center">@ViewBag.Game.Name</h1>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="@ViewBag.Game.Image" alt="First slide">
+            </div>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush" >
+        <li class="list-group-item">@ViewBag.Game.Genre.Name</li>
+        <li class="list-group-item">@ViewBag.Game.Developer.Name</li>
+        <li class="list-group-item">@ViewBag.Game.Year</li>
+    </ul>
+
+    <p class="text-justify">
+        @ViewBag.Game.Descroption
+    </p>
+</div>

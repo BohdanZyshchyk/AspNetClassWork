@@ -1,0 +1,18 @@
+﻿body {
+}
+
+h1{
+    background:olive;
+    color: white;
+    padding: 10px;
+}
+
+.my-card{
+    background-color:lightblue;
+    margin-bottom:20px;
+}
+
+.my-card:hover{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    cursor:pointer;
+}
