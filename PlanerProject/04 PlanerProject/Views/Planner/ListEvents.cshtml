@@ -1,55 +1,47 @@
-﻿@model IEnumerable<_04_PlanerProject.Models.EventViewModel>
-
+﻿@model _04_PlanerProject.Models.EventViewModelList
 @{
     ViewBag.Title = "ListEvents";
 }
 
 <h2>ListEvents</h2>
-<form class="form-inline md-form mr-auto mb-4">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-    @Html.ActionLink("Search", "Search", "Planner", new { @class = "btn btn-primary" })
-</form>
 <p>
     @Html.ActionLink("Create New Event", "Create", "Planner", new { @class = "btn btn-primary" })
 </p>
-<table class="table">
-    <tr>
-        <th>
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Date)
-        </th>
-        <th></th>
-    </tr>
+<div class="row">
 
-    @foreach (var item in Model)
+    @foreach (var item in @Model.Models)
     {
-        <tr>
-            <td>
-                
-                <img src="@Html.DisplayFor(modelItem => item.Image)" alt="Alternate Text" width="60" />
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary"})
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
-            </td>
-        </tr>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <img src="@Html.DisplayFor(modelItem => item.Image)" width="300" class="card-img-top" alt="...">
+                <div class="panel-heading">@Html.DisplayFor(modelItem => item.Title)</div>
+                <div class="panel-body">@Html.DisplayFor(modelItem => item.Description)</div>
+                <div class="panel-footer">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+                </div>
+            </div>
+            @*<div class="card">
+                    <img src="@Html.DisplayFor(modelItem => item.Image)" width="80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h5>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+                    </div>
+                </div>*@
+        </div>
     }
 
-</table>
+</div>
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item">@Html.ActionLink("Previous", "ListEvents", new { pageId = @Model.ActualPage-1})</li>
+        @for (int i = 0; i < @Model.TotalCount; i++)
+        {
+            <li class="page-item">@Html.ActionLink((i + 1).ToString(), "ListEvents", new { pageId = i })</li>
+        }
+    <li class="page-item">@Html.ActionLink("Next", "ListEvents", new { pageId = @Model.ActualPage+1 })</li>
+    </ul>
+</nav>
+

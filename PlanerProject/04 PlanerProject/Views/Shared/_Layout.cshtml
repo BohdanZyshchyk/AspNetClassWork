@@ -24,6 +24,12 @@
                     <li>@Html.ActionLink("Planner manager", "ListEvents", "Planner")</li>
                 </ul>
             </div>
+            @using (Html.BeginForm("Search", "Planner", FormMethod.Post))
+            {
+                <input type="text" name="searchInput" />
+                <input type="submit" value="Search"/>
+            }
+
         </div>
     </div>
     <div class="container body-content">

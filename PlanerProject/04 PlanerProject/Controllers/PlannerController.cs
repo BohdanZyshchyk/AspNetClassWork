@@ -17,19 +17,27 @@ namespace _04_PlanerProject.Controllers
             _context = new EFContext();
         }
 
-        public ActionResult ListEvents()
+        public ActionResult ListEvents(int pageId = 0)
         {
+            EventViewModelList viewModelList = new EventViewModelList();
+            viewModelList.TotalCount = _context.Events.Count();
+            viewModelList.CountOnPage = 1;
 
-            List<EventViewModel> data = _context.Events.Select(t => new EventViewModel
+            if (pageId < 0 || pageId >= viewModelList.TotalCount)
+                pageId = 0;
+
+            viewModelList.ActualPage = pageId;
+            viewModelList.Models =_context.Events.Select(t => new EventViewModel
             {
                 Id = t.Id,
                 Date = t.Date,
                 Description = t.Description,
                 Image = t.Image,
                 Title = t.Title
-            }).ToList();
+            }).ToList().GetRange(pageId, viewModelList.CountOnPage);
 
-            return View(data);
+            ViewBag.ModelCount = _context.Events.Count();
+            return View(viewModelList);
         }
 
         [HttpGet]
@@ -37,20 +45,7 @@ namespace _04_PlanerProject.Controllers
         {
             return View();
         }
-        [HttpGet]
-        public ActionResult Search()
-        {
-            List<EventViewModel> data = _context.Events.Select(t => new EventViewModel
-            {
-                Id = t.Id,
-                Date = t.Date,
-                Description = t.Description,
-                Image = t.Image,
-                Title = t.Title
-            }).ToList();
 
-            return RedirectToAction("ListEvents", "Planner");
-        }
         [HttpPost]
         public ActionResult Create(EventCreateViewModel model)
         {
@@ -80,7 +75,7 @@ namespace _04_PlanerProject.Controllers
             return RedirectToAction("ListEvents", "Planner");
         }
 
-       
+
         [HttpGet]
         public ActionResult Edit(int id)
         {
@@ -114,5 +109,27 @@ namespace _04_PlanerProject.Controllers
                 return View();
             }
         }
+
+        [HttpPost]
+        public ActionResult Search(string searchInput)
+        {
+            var models = _context.Events.Where(x => x.Title.Contains(searchInput));
+            List<EventViewModel> eventViewModels = new List<EventViewModel>();
+            foreach (var item in models)
+            {
+                eventViewModels.Add(new EventViewModel
+                {
+                    Id = item.Id,
+                    Date = item.Date,
+                    Description = item.Description,
+                    Image = item.Image,
+                    Title = item.Title
+                });
+            }
+
+            return View(nameof(ListEvents), eventViewModels);
+        }
+
+
     }
 }

@@ -142,6 +142,7 @@
     <Compile Include="Models\EventEditViewModel.cs" />
     <Compile Include="Models\EventCreateViewModel.cs" />
     <Compile Include="Models\EventViewModel.cs" />
+    <Compile Include="Models\EventViewModelList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
