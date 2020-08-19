@@ -1,0 +1,17 @@
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\DependencyProjectDemo.exe.config
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\DependencyProjectDemo.exe
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\DependencyProjectDemo.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\obj\Debug\DependencyProjectDemo.csprojAssemblyReference.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\obj\Debug\DependencyProjectDemo.csproj.CoreCompileInputs.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\obj\Debug\DependencyProjectDemo.exe
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\obj\Debug\DependencyProjectDemo.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\Autofac.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\Autofac.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\Autofac.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\DependencyProjectDemo\DependencyProjectDemo\obj\Debug\DependencyProjectDemo.csproj.CopyComplete
