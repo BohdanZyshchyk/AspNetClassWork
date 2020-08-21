@@ -14,7 +14,7 @@ namespace GameStore.DAL.Entities
         [Required]
         [StringLength(200)]
         public string Name { get; set; }
-        public virtual ICollection<Game> Games { get; set; }
+        public ICollection<Game> Games { get; set; }
 
         public Developer()
         {

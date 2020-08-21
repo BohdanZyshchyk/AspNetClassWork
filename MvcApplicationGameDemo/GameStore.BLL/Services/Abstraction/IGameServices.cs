@@ -10,5 +10,8 @@ namespace GameStore.BLL.Services.Abstraction
     public interface IGameServices
     {
         ICollection<Game> GetAllGames();
+        ICollection<string> GetAllGenres();
+        ICollection<string> GetAllDevelopers();
+        void AddGame(Game game);
     }
 }

@@ -1,3 +1,4 @@
+using MvcApplicationGameDemo.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace MvcApplicationGameDemo
     {
         protected void Application_Start()
         {
+            AutofacConfiguration.ConfigurateAutofac();
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

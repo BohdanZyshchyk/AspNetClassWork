@@ -16,7 +16,7 @@ namespace GameStore.DAL.Entities
         public string Name { get; set; }
 
         //NavigationProperty Props
-        public virtual ICollection<Game> Games { get; set; }
+        public ICollection<Game> Games { get; set; }
         public Genre()
         {
             Games = new List<Game>();

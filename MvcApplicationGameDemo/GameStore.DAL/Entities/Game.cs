@@ -19,7 +19,7 @@ namespace GameStore.DAL.Entities
         [Required]
         public string Image { get; set; }
         /*navigation properties*/
-        public virtual Genre Genre { get; set; }
-        public virtual Developer Developer { get; set; }
+        public Genre Genre { get; set; }
+        public Developer Developer { get; set; }
     }
 }
