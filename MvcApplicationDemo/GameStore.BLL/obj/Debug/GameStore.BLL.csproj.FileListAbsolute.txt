@@ -1,0 +1,27 @@
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.BLL.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.BLL.pdb
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.DAL.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\bin\Debug\EntityFramework.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.DAL.pdb
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.DAL.dll.config
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\bin\Debug\EntityFramework.xml
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.csprojAssemblyReference.cache
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.csproj.CoreCompileInputs.cache
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.csproj.CopyComplete
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.BLL.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.BLL.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.DAL.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\EntityFramework.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.DAL.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.DAL.dll.config
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\EntityFramework.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.csprojAssemblyReference.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.csproj.CoreCompileInputs.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.csproj.CopyComplete
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\Binbin.Linq.PredicateBuilder.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.BLL\bin\Debug\System.Diagnostics.DiagnosticSource.xml

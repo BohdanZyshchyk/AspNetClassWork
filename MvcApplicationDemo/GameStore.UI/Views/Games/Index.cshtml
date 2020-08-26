@@ -1,0 +1,22 @@
+﻿@model IEnumerable<GameStore.UI.Models.GameViewModel>
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@*<p>
+        <img src="https://localhost:44343/Games/Delete/1" alt="" />
+    </p>*@
+@{
+    Html.RenderPartial("Partial/Sidebar");
+}
+<div class="container content-wrapper">
+    <p>
+        @* /Games/Create *@
+        @Html.ActionLink("Create New game", "Create", null, new { @class = "btn btn-warning" })
+    </p>
+
+    @{
+        Html.RenderPartial("Partial/GamesPartial", Model);
+    }
+</div>

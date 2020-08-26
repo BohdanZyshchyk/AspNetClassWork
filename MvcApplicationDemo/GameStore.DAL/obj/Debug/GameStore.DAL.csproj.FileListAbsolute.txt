@@ -1,0 +1,24 @@
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.dll.config
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.pdb
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.xml
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CoreCompileInputs.cache
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CopyComplete
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.dll
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.pdb
+D:\Asp.Net Mvc\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csprojAssemblyReference.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.dll.config
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csprojAssemblyReference.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CoreCompileInputs.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CopyComplete
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.pdb
