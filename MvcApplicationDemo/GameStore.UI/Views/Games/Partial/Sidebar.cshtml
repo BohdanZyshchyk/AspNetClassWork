@@ -31,7 +31,7 @@
                                     @foreach (string item in ViewBag.Developers)
                                     {
                                         <li class="nav-item">
-                                            <input   onchange="setDevelopers(event)" name="@item" id="@item" type="checkbox" />
+                                            <input  onchange="setDevelopers(event)" name="@item" id="@item" type="checkbox" />
                                             <label for="@item">@item</label>
                                         </li>
                                     }
@@ -50,7 +50,7 @@
                                     @foreach (string item in ViewBag.Genres)
                                     {
                                         <li class="nav-item">
-                                            <input name="@item" id="@item" type="checkbox" />
+                                            <input onchange="setGenres(event)" name="@item" id="@item" type="checkbox" />
                                             <label for="@item">@item</label>
                                         </li>
                                     }

@@ -15,8 +15,9 @@
         @* /Games/Create *@
         @Html.ActionLink("Create New game", "Create", null, new { @class = "btn btn-warning" })
     </p>
-
-    @{
-        Html.RenderPartial("Partial/GamesPartial", Model);
-    }
+    <dev id="games">
+        @{
+            Html.RenderPartial("Partial/GamesPartial", Model);
+        }
+    </dev>
 </div>

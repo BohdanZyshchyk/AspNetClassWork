@@ -23,6 +23,7 @@ namespace GameStore.UI.Controllers
             mapper = _mapper;
         }
         // GET: Games
+        [HttpGet]
         public ActionResult Index(string type, string name)
         {
             SetFilters();
@@ -55,25 +56,65 @@ namespace GameStore.UI.Controllers
 
             return View(gamesViewModel);
         }
+        [HttpGet]
+        public ActionResult Filter(string type, string name)
+        {
+            //SetFilters();
+            List<Game> games = null;
+            if (type != null && name != null)
+            {
+                AddFilter(type, name);
+                games = gameService.FilterGames(Session["GameFilters"] as List<GameFilter>).ToList();
+            }
+            else games = gameService.GetAllGames().ToList();
+
+            var gamesViewModel = mapper.Map<ICollection<GameViewModel>>(games);
+
+            return PartialView("Partial/GamesPartial", gamesViewModel);
+        }
+
+        [HttpGet]
+        public ActionResult Search(string search)
+        {
+            var games = gameService.GetAllGames().Where(x => x.Name.Contains(search) || x.Developer.Name.Contains(search));
+            var gamesViewModel = mapper.Map<ICollection<GameViewModel>>(games);
+            if (games.Count() > 0)
+            {
+                return PartialView("Partial/GamesPartial", gamesViewModel);
+            }
+            return HttpNotFound();
+        }
+
 
         private void AddFilter(string type, string name)
         {
-            if (Session["GameFilters"] == null)
-                Session["GameFilters"] = new List<GameFilter>();
+
+            var filters = Session["GameFilters"] as List<GameFilter>;
+            if (filters == null)
+                filters = new List<GameFilter>();
+
+            var isExist = filters.FirstOrDefault(x => x.Name == name && x.Type == type);
+            if (isExist != null)
+            {
+                filters.Remove(isExist);
+                Session["GameFilters"] = filters;
+                return;
+            }
             var filter = new GameFilter
             {
                 Name = name,
                 Type = type
             };
-            if(type == "Developer")
+            if (type == "Developer")
             {
                 filter.Predicate = (x => x.Developer.Name == name);
             }
-            else if(type == "Genre")
+            else if (type == "Genre")
             {
                 filter.Predicate = (x => x.Genre.Name == name);
             }
-            (Session["GameFilters"] as List<GameFilter>).Add(filter);
+            filters.Add(filter);
+            Session["GameFilters"] = filters;
         }
 
         private void SetFilters()

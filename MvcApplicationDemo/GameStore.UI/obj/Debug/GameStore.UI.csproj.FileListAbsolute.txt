@@ -162,6 +162,7 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameSto
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.Deployment.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.Razor.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\Binbin.Linq.PredicateBuilder.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\GameStore.BLL.pdb
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\GameStore.DAL.pdb
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\GameStore.DAL.dll.config
@@ -186,4 +187,3 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameSto
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.csproj.CopyComplete
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.pdb
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.UI\bin\Binbin.Linq.PredicateBuilder.dll

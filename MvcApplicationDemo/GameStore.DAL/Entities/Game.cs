@@ -21,6 +21,8 @@ namespace GameStore.DAL.Entities
         [Required]
         public int Price { get; set; }
 
+        public int? DeveloperId { get; set; }
+        public int? GenreId { get; set; }
         /*navigation properties*/
         public  Genre Genre { get; set; }
         public  Developer Developer { get; set; }

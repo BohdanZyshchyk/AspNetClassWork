@@ -64,7 +64,7 @@ namespace GameStore.DAL.Initializer
                 new Game {Name="FIFA", Description="FIFA info...", Genre=genre.FirstOrDefault(x => x.Name=="Strategy"), Year=1990, Image="https://i1.rozetka.ua/goods/13967460/fifa_20_standartnoe_izdanie_ps4_russkaya_versiya_images_13967460598.jpg",
                 Developer=developer.FirstOrDefault(x => x.Name=="Playrix"), Price = 100},
                 new Game {Name="Metro", Description="Metro info...", Genre=genre.FirstOrDefault(x => x.Name=="Sport Simulator"), Year=2042, Image="https://upload.wikimedia.org/wikipedia/ru/thumb/c/c5/Metro_Exodus.png/1200px-Metro_Exodus.png",
-                Developer=developer.FirstOrDefault(x => x.Name=="Activision"), Price = 40},
+                Developer=developer.FirstOrDefault(x => x.Name=="Ghost Games"), Price = 40},
             };
             context.Developers.AddRange(developer);
             context.Genres.AddRange(genre);
