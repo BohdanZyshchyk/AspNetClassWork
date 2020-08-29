@@ -22,3 +22,7 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameSto
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CopyComplete
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\GameStore.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
