@@ -13,18 +13,5 @@ D:\Asp.Net Mvc\MvcApplicationDemo\Examples\obj\Debug\Examples.csproj.CoreCompile
 D:\Asp.Net Mvc\MvcApplicationDemo\Examples\obj\Debug\Examples.csproj.CopyComplete
 D:\Asp.Net Mvc\MvcApplicationDemo\Examples\obj\Debug\Examples.exe
 D:\Asp.Net Mvc\MvcApplicationDemo\Examples\obj\Debug\Examples.pdb
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\Examples.exe.config
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\Examples.exe
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\Examples.pdb
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\EntityFramework.dll
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\GameStore.DAL.dll
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\GameStore.DAL.pdb
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\GameStore.DAL.dll.config
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\EntityFramework.xml
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\obj\Debug\Examples.csprojAssemblyReference.cache
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\obj\Debug\Examples.csproj.CoreCompileInputs.cache
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\obj\Debug\Examples.csproj.CopyComplete
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\obj\Debug\Examples.exe
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationDemo\Examples\obj\Debug\Examples.pdb

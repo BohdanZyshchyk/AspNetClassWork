@@ -35,6 +35,11 @@ namespace GameStore.UI.Utils
             };
 
             // token
+            var dataProvider = options.DataProtectionProvider;
+            if(dataProvider != null)
+            {
+                manager.UserTokenProvider = new DataProtectorTokenProvider<IdentityUser>(dataProvider.Create("token"));
+                    }
             return manager;
         }
     }

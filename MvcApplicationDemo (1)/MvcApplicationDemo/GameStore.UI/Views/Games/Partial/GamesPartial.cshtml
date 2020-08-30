@@ -1,0 +1,58 @@
+﻿@model IEnumerable<GameStore.UI.Models.GameViewModel>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6">
+            @* Games/Delete/ *@
+            @using (@Html.BeginForm("Delete", "Games", new { id = item.Id }, FormMethod.Post))
+            {
+                <div class="card card-widget widget-user-2 shadow-sm">
+                    <div class="widget-user-header bg-warning">
+                        <div class="widget-user-image">
+                            <img class="elevation-2" src="@item.Image" alt="game Avatar">
+                        </div>
+                        <h3 class="widget-user-username">@item.Name</h3>
+                        <h5 class="widget-user-desc">@item.Developer</h5>
+                    </div>
+                    <div class="card-footer p-0">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    Genre <span class="float-right badge bg-primary">@item.Genre</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    Year <span class="float-right badge bg-info">@item.Year</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Price <span class="float-right badge bg-success">@item.Price $</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                                <input type="submit" value="Delete" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    @if (Model.Count() == 0)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-12 alert alert-info" role="alert">
+                    This is a info alert—check it out!
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
