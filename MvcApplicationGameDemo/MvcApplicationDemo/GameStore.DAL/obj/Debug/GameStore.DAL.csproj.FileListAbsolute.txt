@@ -10,3 +10,15 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\Mvc
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CopyComplete
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.dll.config
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\GameStore.DAL.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csprojAssemblyReference.cache
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CoreCompileInputs.cache
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.CopyComplete
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.pdb

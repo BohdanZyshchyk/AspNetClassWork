@@ -93,10 +93,98 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\Mvc
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.csproj.CopyComplete
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.pdb
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Antlr3.Runtime.dll
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Newtonsoft.Json.dll
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Optimization.dll
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\WebGrease.dll
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Antlr3.Runtime.pdb
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Newtonsoft.Json.xml
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Optimization.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.UI.dll.config
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.UI.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.UI.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\csc.exe
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\csc.exe.config
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\csc.rsp
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\csi.exe
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\csi.exe.config
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\csi.rsp
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.AppContext.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Console.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.IO.Compression.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Net.Http.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.ValueTuple.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\vbc.exe
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\vbc.exe.config
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\vbc.rsp
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\VBCSCompiler.exe
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Autofac.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Autofac.Integration.Mvc.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\AutoMapper.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\EntityFramework.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\EntityFramework.SqlServer.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.BLL.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.DAL.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Helpers.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Mvc.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Razor.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.Razor.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Binbin.Linq.PredicateBuilder.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.BLL.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.DAL.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\GameStore.DAL.dll.config
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Autofac.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Autofac.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Autofac.Integration.Mvc.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\AutoMapper.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\EntityFramework.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\EntityFramework.SqlServer.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Razor.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Webpages.Razor.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Helpers.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Mvc.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.csprojAssemblyReference.cache
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.csproj.CoreCompileInputs.cache
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.csproj.CopyComplete
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.pdb
