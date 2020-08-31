@@ -21,10 +21,16 @@ namespace _04_PlanerProject
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
+            bundles.Add(new ScriptBundle("~/bundles/Alerts").Include(
+            "~/Scripts/Alerts.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/HomePage").Include(
+                "~/Content/Elements.css",
+                "~/Content/HomePage.css"
+                ));
         }
     }
 }

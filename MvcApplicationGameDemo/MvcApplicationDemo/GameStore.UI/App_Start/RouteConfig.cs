@@ -16,7 +16,7 @@ namespace GameStore.UI
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Games", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Games", action = "Home", id = UrlParameter.Optional }
             );
         }
     }

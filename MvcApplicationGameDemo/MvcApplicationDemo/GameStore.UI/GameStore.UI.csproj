@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>3.9</TypeScriptToolsVersion>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Autofac, Version=5.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.5.0.0\lib\net461\Autofac.dll</HintPath>
     </Reference>
@@ -65,6 +69,9 @@
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
@@ -81,6 +88,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -88,6 +98,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -116,7 +129,66 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\img\img.jpg" />
+    <Content Include="Content\img\1.jpg" />
+    <Content Include="Content\img\10.jpg" />
+    <Content Include="Content\img\11.jpg" />
+    <Content Include="Content\img\12.jpg" />
+    <Content Include="Content\img\13.jpg" />
+    <Content Include="Content\img\14.jpg" />
+    <Content Include="Content\img\15.jpg" />
+    <Content Include="Content\img\16.jpg" />
+    <Content Include="Content\img\17.jpg" />
+    <Content Include="Content\img\18.jpg" />
+    <Content Include="Content\img\19.jpg" />
+    <Content Include="Content\img\2.jpg" />
+    <Content Include="Content\img\20.jpg" />
+    <Content Include="Content\img\21.jpg" />
+    <Content Include="Content\img\22.jpg" />
+    <Content Include="Content\img\23.jpg" />
+    <Content Include="Content\img\24.jpg" />
+    <Content Include="Content\img\25.jpg" />
+    <Content Include="Content\img\26.jpg" />
+    <Content Include="Content\img\27.jpg" />
+    <Content Include="Content\img\28.jpg" />
+    <Content Include="Content\img\29.jpg" />
+    <Content Include="Content\img\3.jpg" />
+    <Content Include="Content\img\30.jpg" />
+    <Content Include="Content\img\31.jpg" />
+    <Content Include="Content\img\32.jpg" />
+    <Content Include="Content\img\33.jpg" />
+    <Content Include="Content\img\34.jpg" />
+    <Content Include="Content\img\35.jpg" />
+    <Content Include="Content\img\36.jpg" />
+    <Content Include="Content\img\37.jpg" />
+    <Content Include="Content\img\38.jpg" />
+    <Content Include="Content\img\39.jpg" />
+    <Content Include="Content\img\4.jpg" />
+    <Content Include="Content\img\40.jpg" />
+    <Content Include="Content\img\41.jpg" />
+    <Content Include="Content\img\42.jpg" />
+    <Content Include="Content\img\43.jpg" />
+    <Content Include="Content\img\44.jpg" />
+    <Content Include="Content\img\45.jpg" />
+    <Content Include="Content\img\46.jpg" />
+    <Content Include="Content\img\47.jpg" />
+    <Content Include="Content\img\48.jpg" />
+    <Content Include="Content\img\49.jpg" />
+    <Content Include="Content\img\5.jpg" />
+    <Content Include="Content\img\50.jpg" />
+    <Content Include="Content\img\51.jpg" />
+    <Content Include="Content\img\52.jpg" />
+    <Content Include="Content\img\53.jpg" />
+    <Content Include="Content\img\54.jpg" />
+    <Content Include="Content\img\6.jpg" />
+    <Content Include="Content\img\7.jpg" />
+    <Content Include="Content\img\8.jpg" />
+    <Content Include="Content\img\9.jpg" />
+    <Content Include="Content\img\add.png" />
+    <Content Include="Content\img\game1.jpg" />
+    <Content Include="Content\img\game2.jpg" />
+    <Content Include="Content\img\game3.jpg" />
+    <Content Include="Content\img\img.jpg" />
+    <Content Include="Content\img\side-img.png" />
     <Content Include="Content\adminlte.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -124,8 +196,11 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\home-style.css" />
+    <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\active.js" />
     <Content Include="Scripts\adminlte.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -155,6 +230,7 @@
     <Content Include="Scripts\jquery-3.0.0.min.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\owl.carousel.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -230,6 +306,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -262,6 +339,8 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Games\Partial\Sidebar.cshtml" />
     <Content Include="Views\Games\Partial\GamesPartial.cshtml" />
+    <Content Include="Views\Games\Home.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -269,7 +348,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameStore.BLL\GameStore.BLL.csproj">
       <Project>{E074DF49-C61C-448C-AA0A-3B6FA685C20B}</Project>

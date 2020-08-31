@@ -6,6 +6,7 @@ using GameStore.UI.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using System.Web.Optimization;
 
 namespace GameStore.UI.Controllers
 {
@@ -20,6 +21,10 @@ namespace GameStore.UI.Controllers
             mapper = _mapper;
         }
         // GET: Games
+        public ActionResult Home()
+        {
+            return View();
+        }
         public ActionResult Index(string type, string name)
         {
             SetFilters();

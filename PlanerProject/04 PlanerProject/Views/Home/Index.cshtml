@@ -1,6 +1,10 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@Styles.Render("~/Content/HomePage")
+@section Scripts{
+    console.log("Hello World");
+}
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -29,3 +33,5 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+
+@Scripts.Render("~/bundles/Alerts");
