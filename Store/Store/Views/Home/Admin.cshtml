@@ -1,0 +1,43 @@
+﻿@model Store.Models.UserRolesViewModel
+
+@{
+    ViewBag.Title = "Admin";
+}
+
+<h2>Admin</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+
+    <table class="table">
+
+
+        @foreach (var item in Model.Users)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <select id="Roles" name="Roles" class="form-control">
+                        @foreach (var roles in Model.Roles)
+                        {
+                            <option>@roles.RoleName</option>
+                        }
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" value="Set" class="btn btn-warning" />
+                </td>
+            </tr>
+        }
+
+    </table>
+
+}
