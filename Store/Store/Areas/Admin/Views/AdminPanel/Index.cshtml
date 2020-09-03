@@ -28,6 +28,10 @@
                     <select id="Roles" name="Roles" class="form-control">
                         @foreach (var roles in Model.Roles)
                         {
+                            if (item.RoleId.Equals(roles.RoleId))
+                            {
+                                <option selected>@roles.RoleName</option>
+                            }
                             <option>@roles.RoleName</option>
                         }
                     </select>

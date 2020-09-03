@@ -19,6 +19,6 @@ namespace Store.Entities
         public string Text { get; set; }
         [Required]
         public string ImageName { get; set; }
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

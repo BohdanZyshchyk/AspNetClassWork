@@ -1,4 +1,5 @@
-﻿using Store.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using Store.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace Store.Areas.Admin.Controllers
             {
                 Id = t.Id,
                 Email = t.Email,
-                RoleId = context.Roles.FirstOrDefault(x => x.Id == t.Id).Id
+                RoleId = context.Set<IdentityUserRole>().FirstOrDefault(x => x.UserId == t.Id).RoleId
             }).ToList();
 
             List<RolesViewModel> roles = context.Roles.Select(t => new RolesViewModel

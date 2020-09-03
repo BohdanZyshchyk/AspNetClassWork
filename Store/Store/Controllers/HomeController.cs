@@ -28,6 +28,10 @@ namespace Store.Controllers
                 {
                     return RedirectToAction("Index", "AdminPanel", new { area = "Admin" });
                 }
+                else if (role.Name == "Manager")
+                {
+                    return RedirectToAction("Index", "ManagerPanel", new { area = "Manager" });
+                }
             }
             return View();
         }
