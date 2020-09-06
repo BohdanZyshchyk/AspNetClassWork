@@ -180,17 +180,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202009021738019_init.cs" />
-    <Compile Include="Migrations\202009021738019_init.Designer.cs">
-      <DependentUpon>202009021738019_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009021957240_title.cs" />
-    <Compile Include="Migrations\202009021957240_title.Designer.cs">
-      <DependentUpon>202009021957240_title.cs</DependentUpon>
+    <Compile Include="Helper\ImageConfig.cs" />
+    <Compile Include="Helper\Image_Helper.cs" />
+    <Compile Include="Migrations\202009041601058_init.cs" />
+    <Compile Include="Migrations\202009041601058_init.Designer.cs">
+      <DependentUpon>202009041601058_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CatgoriesViewModel.cs" />
+    <Compile Include="Models\Custom\UserAdditionalInfo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NewsViewModel.cs" />
@@ -267,6 +266,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Manage\Settings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -275,6 +275,7 @@
     <Folder Include="Areas\User\Controllers\" />
     <Folder Include="Areas\User\Data\" />
     <Folder Include="Areas\User\Views\Shared\" />
+    <Folder Include="Images\UserPhoto\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -290,11 +291,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009021738019_init.resx">
-      <DependentUpon>202009021738019_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009021957240_title.resx">
-      <DependentUpon>202009021957240_title.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202009041601058_init.resx">
+      <DependentUpon>202009041601058_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

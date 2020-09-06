@@ -216,4 +216,3 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Stor
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.pdb
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.Migrations.init.resources
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.csproj.GenerateResource.cache
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.Migrations.title.resources

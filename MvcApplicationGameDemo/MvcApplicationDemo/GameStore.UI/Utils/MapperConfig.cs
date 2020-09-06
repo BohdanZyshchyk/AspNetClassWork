@@ -25,7 +25,10 @@ namespace GameStore.UI.Utils
                 // Genre genre <- new Genre {Name = z.Genre (string)}
                 .ForMember(x => x.Genre, opt => opt.MapFrom(z => new Genre { Name = z.Genre }))
                 .ForMember(x => x.Developer, opt => opt.MapFrom(z => new Developer { Name = z.Developer }));
-
+            CreateMap<Developer, DeveloperViewModel>();
+            CreateMap<DeveloperViewModel, Developer>();
+            CreateMap<Genre, GenreViewModel>();
+            CreateMap<GenreViewModel, Genre>();
 
         }
     }

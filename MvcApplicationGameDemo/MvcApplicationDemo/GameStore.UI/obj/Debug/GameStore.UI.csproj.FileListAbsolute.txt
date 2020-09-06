@@ -188,3 +188,10 @@ C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApp
 C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.csproj.CopyComplete
 C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.dll
 C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\obj\Debug\GameStore.UI.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Antlr3.Runtime.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Newtonsoft.Json.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Optimization.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\WebGrease.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Antlr3.Runtime.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\Newtonsoft.Json.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.UI\bin\System.Web.Optimization.xml

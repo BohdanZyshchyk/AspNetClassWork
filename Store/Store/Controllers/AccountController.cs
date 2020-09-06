@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -9,7 +11,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using Store.Helper;
 using Store.Models;
+using Store.Models.Custom;
 
 namespace Store.Controllers
 {
@@ -162,11 +166,18 @@ namespace Store.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> Register(RegisterViewModel model, HttpPostedFileBase imageFile)
         {
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email,  };
+                var newUser = new UserAdditionalInfo
+                {
+                    FullName = model.FullName,
+                    Image = SaveImage(imageFile),
+                    Id = user.Id
+                };
+                context.UserAdditionalInfo.Add(newUser);
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -188,6 +199,21 @@ namespace Store.Controllers
             return View(model);
         }
 
+        public string SaveImage(HttpPostedFileBase imageFile)
+        {
+            string fileName = Guid.NewGuid().ToString() + ".jpg";
+            string fullPathImage = Server.MapPath(ImageConfig.ProductImagePath) + "\\" + fileName;
+            using (Bitmap bmp = new Bitmap(imageFile.InputStream))
+            {
+                var readyImage = Image_Helper.CreateImage(bmp, 450, 450);
+                if (readyImage != null)
+                {
+                    readyImage.Save(fullPathImage, ImageFormat.Jpeg);
+                    return fileName;
+                }
+            }
+            return "no image";
+        }
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]

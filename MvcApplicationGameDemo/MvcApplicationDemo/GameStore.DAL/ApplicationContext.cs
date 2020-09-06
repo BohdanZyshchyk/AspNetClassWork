@@ -14,5 +14,17 @@ namespace GameStore.DAL
         {
             Database.SetInitializer(new GamesInitializer());
         }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Game>()
+            .HasOptional<Developer>(s => s.Developer)
+            .WithMany()
+            .WillCascadeOnDelete(true);
+            modelBuilder.Entity<Game>()
+            .HasOptional<Genre>(s => s.Genre)
+            .WithMany()
+            .WillCascadeOnDelete(true);
+        }
     }
 }

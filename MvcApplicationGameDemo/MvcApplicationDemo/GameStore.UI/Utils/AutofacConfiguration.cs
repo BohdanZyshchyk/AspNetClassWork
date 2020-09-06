@@ -33,6 +33,8 @@ namespace GameStore.UI.Utils
             builder.RegisterType<ApplicationContext>().As<DbContext>().SingleInstance();
             builder.RegisterGeneric(typeof(EFRepository<>)).As(typeof(IGenericRepository<>));
             builder.RegisterType<GameService>().As<IGameService>();
+            builder.RegisterType<DeveloperService>().As<IDeveloperService>();
+            builder.RegisterType<GenreService>().As<IGenreService>();
 
             // Register Mapper
             var mapperConfig = new MapperConfiguration(x => x.AddProfile(new MapperConfig()));
