@@ -417,6 +417,8 @@ namespace Store.Controllers
                     if (result.Succeeded)
                     {
                         await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                        var userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(context));
+                        userManager.AddToRole(user.Id, "User");
                         return RedirectToLocal(returnUrl);
                     }
                 }

@@ -209,10 +209,10 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\bin\Microsoft.
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.csprojAssemblyReference.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.Migrations.init.resources
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.csproj.GenerateResource.cache
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.csproj.CoreCompileInputs.cache
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.csproj.CopyComplete
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.pdb
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.Migrations.init.resources
-C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.csproj.GenerateResource.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\Store\Store\obj\Debug\Store.csprojAssemblyReference.cache
