@@ -3,8 +3,14 @@ using GameStore.BLL.Filters;
 using GameStore.BLL.Services.Abstraction;
 using GameStore.DAL.Entities;
 using GameStore.UI.Models;
+using GameStore.UI.Utils;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
+using System.IO;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 
@@ -140,11 +146,12 @@ namespace GameStore.UI.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Create(GameViewModel model)
+        public ActionResult Create(GameViewModel model, HttpPostedFileBase imageFile)
         {
             if (ModelState.IsValid)
             {
                 var game = mapper.Map<Game>(model);
+                game.Image = SaveImage(imageFile);
                 gameService.AddGame(game);
 
                 return RedirectToAction("Index");
@@ -173,8 +180,29 @@ namespace GameStore.UI.Controllers
         [HttpPost]
         public ActionResult Delete(int id)
         {
+            var filePath = Server.MapPath("~/Content/img/" + gameService.GetGame(id).Image);
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
             gameService.Delete(id);
             return RedirectToAction("Index");
+        }
+
+        public string SaveImage(HttpPostedFileBase imageFile)
+        {
+            string fileName = Guid.NewGuid().ToString() + ".jpg";
+            string fullPathImage = Server.MapPath(ImageConfig.ProductImagePath) + "\\" + fileName;
+            using (Bitmap bmp = new Bitmap(imageFile.InputStream))
+            {
+                var readyImage = Image_Helper.CreateImage(bmp, 450, 450);
+                if (readyImage != null)
+                {
+                    readyImage.Save(fullPathImage, ImageFormat.Jpeg);
+                    return fileName;
+                }
+            }
+            return "no image";
         }
     }
 }

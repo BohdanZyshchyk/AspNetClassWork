@@ -18,13 +18,15 @@ namespace GameStore.UI.Utils
             // string genre <- Genre.Name
                 .ForMember(x => x.Genre, opt => opt.MapFrom(z => z.Genre.Name))
             // string developer <- Developer.Name
-                .ForMember(x => x.Developer, opt => opt.MapFrom(z => z.Developer.Name));
+                .ForMember(x => x.Developer, opt => opt.MapFrom(z => z.Developer.Name))
+                .ForMember(x => x.Image, opt => opt.MapFrom(z => ImageConfig.DomainProject + "Content/img/" + z.Image));
 
             // GameViewModel => Game
             CreateMap<GameViewModel, Game>()
                 // Genre genre <- new Genre {Name = z.Genre (string)}
                 .ForMember(x => x.Genre, opt => opt.MapFrom(z => new Genre { Name = z.Genre }))
                 .ForMember(x => x.Developer, opt => opt.MapFrom(z => new Developer { Name = z.Developer }));
+                
             CreateMap<Developer, DeveloperViewModel>();
             CreateMap<DeveloperViewModel, Developer>();
             CreateMap<Genre, GenreViewModel>();
