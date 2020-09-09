@@ -1,10 +1,11 @@
 ﻿using GameStore.DAL.Entities;
 using GameStore.DAL.Initializer;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 
 namespace GameStore.DAL
 {
-    public class ApplicationContext : DbContext
+    public class ApplicationContext : IdentityDbContext<IdentityUser>
     {
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Developer> Developers { get; set; }

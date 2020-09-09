@@ -1,4 +1,5 @@
 ﻿using GameStore.DAL.Entities;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace GameStore.DAL.Initializer
     {
         protected override void Seed(ApplicationContext context)
         {
+            var admin = new IdentityRole { Name = "Admin" };
+            var user = new IdentityRole { Name = "User"};
             var genre = new List<Genre> {
                 new Genre {Name = "Action"},
                 new Genre {Name = "Shooter"},
@@ -59,6 +62,8 @@ namespace GameStore.DAL.Initializer
                 new Game {Name="Assassins Creed", Description="Assassins info...", Genre=genre.FirstOrDefault(x => x.Name=="Action"), Year=2018, Image="https://ubistatic19-a.akamaihd.net/marketingresource/ru-ru/assassins-creed/assassins-creed-odyssey/assets/images/ack_announce-slide_keyart_361691.jpg",
                 Developer=developer.FirstOrDefault(x => x.Name=="Ghost Games"), Price = 78}
             };
+            context.Roles.Add(admin);
+            context.Roles.Add(user);
             context.Developers.AddRange(developer);
             context.Genres.AddRange(genre);
             context.Games.AddRange(games);

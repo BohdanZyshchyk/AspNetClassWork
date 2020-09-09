@@ -28,3 +28,8 @@ C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApp
 C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.csproj.CopyComplete
 C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.dll
 C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\obj\Debug\GameStore.BLL.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\bin\Debug\GameStore.BLL.dll.config
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml

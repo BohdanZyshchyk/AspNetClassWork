@@ -305,6 +305,7 @@
     <Content Include="Views\Developers\Create.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Auth\Register.cshtml" />
+    <Content Include="Views\Auth\Logindel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
