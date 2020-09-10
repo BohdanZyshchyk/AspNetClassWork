@@ -9,7 +9,6 @@
 
 <p>
     @Html.ActionLink("Create News", "Create", "ManagerPanel", new { @class = "btn btn-primary" })
-    @Html.ActionLink("Create Category", "CreateCategory", "ManagerPanel", new { @class = "btn btn-primary" })
 </p>
 
 <div class="row">
@@ -25,7 +24,6 @@
                     @Html.DisplayFor(modelItem => item.Category)
                 </div>
                 <div class="panel-footer">
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })
                     @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
                 </div>
             </div>

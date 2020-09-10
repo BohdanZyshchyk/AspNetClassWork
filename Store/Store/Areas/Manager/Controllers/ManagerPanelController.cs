@@ -1,7 +1,10 @@
 ﻿using Store.Entities;
+using Store.Helper;
 using Store.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -21,7 +24,7 @@ namespace Store.Areas.Manager.Controllers
             List<NewsViewModel> news = context.News.Select(t => new NewsViewModel
             {
                 Id = t.Id,
-                ImageName = t.ImageName,
+                ImageName = ImageConfig.DomainProject + "Images/UserPhoto/" + t.ImageName,
                 Category = t.Category.Name,
                 Date = t.Date,
                 Text = t.Text,
@@ -38,7 +41,7 @@ namespace Store.Areas.Manager.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(NewsViewModel model)
+        public ActionResult Create(NewsViewModel model, HttpPostedFileBase imageFile)
         {
             if (ModelState.IsValid)
             {
@@ -47,7 +50,7 @@ namespace Store.Areas.Manager.Controllers
                 {
                     Category = category,
                     Date = DateTime.Now.ToShortDateString(),
-                    ImageName = model.ImageName,
+                    ImageName = SaveImage(imageFile),
                     Text = model.Text,
                     Title = model.Title
                 };
@@ -57,29 +60,29 @@ namespace Store.Areas.Manager.Controllers
             }
             return Create();
         }
-        [HttpGet]
-        public ActionResult CreateCategory()
-        {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult CreateCategory(CatgoriesViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var newCategory = new Category { Name = model.Name };
-                context.Categories.Add(newCategory);
-                context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return CreateCategory();
-        }
+       
         public ActionResult Delete(int id)
         {
             context.News.Remove(context.News.FirstOrDefault(x => x.Id == id));
             context.SaveChanges();
 
             return RedirectToAction("Index");
+        }
+
+        public string SaveImage(HttpPostedFileBase imageFile)
+        {
+            string fileName = Guid.NewGuid().ToString() + ".jpg";
+            string fullPathImage = Server.MapPath(ImageConfig.ProductImagePath) + "\\" + fileName;
+            using (Bitmap bmp = new Bitmap(imageFile.InputStream))
+            {
+                var readyImage = Image_Helper.CreateImage(bmp, 450, 450);
+                if (readyImage != null)
+                {
+                    readyImage.Save(fullPathImage, ImageFormat.Jpeg);
+                    return fileName;
+                }
+            }
+            return "no image";
         }
     }
 }

@@ -2,20 +2,22 @@
 
 @{
     ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Admin</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create Category", "CreateCategory")
 </p>
-@using (Html.BeginForm())
-{
-
-    <table class="table">
 
 
-        @foreach (var item in Model.Users)
+<table class="table">
+
+
+    @foreach (var item in Model.Users)
+    {
+        using (Html.BeginForm("Index", "AdminPanel", new { userId = item.Id }, FormMethod.Post))
         {
             <tr>
                 <td>
@@ -25,7 +27,7 @@
                     @Html.DisplayFor(modelItem => item.Email)
                 </td>
                 <td>
-                    <select id="Roles" name="Roles" class="form-control">
+                    <select id="roleId" name="roleId" class="form-control">
                         @foreach (var roles in Model.Roles)
                         {
                             if (item.RoleId.Equals(roles.RoleId))
@@ -37,11 +39,11 @@
                     </select>
                 </td>
                 <td>
-                    <input type="submit" value="Set" class="btn btn-warning" />
+                    <input type="submit" name="SetRole" value="Set" class="btn btn-warning" />
                 </td>
             </tr>
         }
+    }
 
     </table>
 
-}
