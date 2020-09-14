@@ -29,7 +29,7 @@ namespace NewsASPCORE
         {
             services.AddCors(options=> {
                 options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("https://web.postman.co"));
+                    builder => builder.WithOrigins("https://web.postman.co/"));
             });
             services.AddDbContext<EFContext>(options => 
                 options.UseSqlServer(Configuration["ConnectionString"],

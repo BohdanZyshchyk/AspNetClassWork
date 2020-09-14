@@ -19,6 +19,12 @@ namespace News.DataAccess.Entity
         public string LinkImage { get; set; }
         [Required]
         public string Description { get; set; }
+        public virtual List<Comments> Comments { get; set; }
+
+        public tblNews()
+        {
+            Comments = new List<Comments>();
+        }
 
     }
 }

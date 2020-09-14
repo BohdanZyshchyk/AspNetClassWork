@@ -13,5 +13,6 @@ namespace News.DataAccess
 
         }
         public DbSet<tblNews> News { get; set; }
+        public DbSet<Comments> Comments { get; set; }
     }
 }
