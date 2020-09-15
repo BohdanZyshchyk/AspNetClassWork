@@ -76,7 +76,8 @@ namespace NewsASPCORE.Controllers
                         Message = "not found news"
                     };
                 }
-
+                var comments = _context.Comments.Where(t => t.News.Id == id).ToList();
+                _context.Comments.RemoveRange(comments);
                 _context.News.Remove(this_news);
                 _context.SaveChanges();
                 return new ResultDTO
