@@ -18,6 +18,7 @@ namespace GameStore.DAL
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Game>()
             .HasOptional<Developer>(s => s.Developer)
             .WithMany()
@@ -26,6 +27,10 @@ namespace GameStore.DAL
             .HasOptional<Genre>(s => s.Genre)
             .WithMany()
             .WillCascadeOnDelete(true);
+        }
+        public static ApplicationContext Create()
+        {
+            return new ApplicationContext();
         }
     }
 }

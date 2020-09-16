@@ -83,10 +83,20 @@
   <ItemGroup>
     <Compile Include="ApplicationContext.cs" />
     <Compile Include="Entities\AppRole.cs" />
+    <Compile Include="Entities\AppUser.cs" />
     <Compile Include="Entities\Developer.cs" />
     <Compile Include="Entities\Game.cs" />
     <Compile Include="Entities\Genre.cs" />
     <Compile Include="Initializer\GamesInitializer.cs" />
+    <Compile Include="Migrations\202009072047425_InitialCreate.cs" />
+    <Compile Include="Migrations\202009072047425_InitialCreate.designer.cs">
+      <DependentUpon>202009072047425_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009161549104_init.cs" />
+    <Compile Include="Migrations\202009161549104_init.designer.cs">
+      <DependentUpon>202009161549104_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Abstraction\IGenericRepository.cs" />
     <Compile Include="Repository\Implementation\EFRepository.cs" />
@@ -96,7 +106,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009072047425_InitialCreate.resx">
+      <DependentUpon>202009072047425_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009161549104_init.resx">
+      <DependentUpon>202009161549104_init.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -41,3 +41,6 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\Mvc
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.Migrations.InitialCreate.resources
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.csproj.GenerateResource.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\MvcApplicationGameDemo\MvcApplicationDemo\GameStore.DAL\obj\Debug\GameStore.DAL.Migrations.init.resources

@@ -1,4 +1,5 @@
 ﻿using GameStore.DAL.Entities;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -10,8 +11,31 @@ namespace GameStore.DAL.Initializer
     {
         protected override void Seed(ApplicationContext context)
         {
-            var admin = new IdentityRole { Name = "Admin" };
-            var user = new IdentityRole { Name = "User"};
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            if (!roleManager.Roles.Any())
+            {
+                IdentityRole roleAdmin = new IdentityRole()
+                {
+                    Name = "Admin",
+                };
+                IdentityRole roleUser = new IdentityRole()
+                {
+                    Name = "User",
+                };
+                roleManager.Create(roleAdmin);
+                roleManager.Create(roleUser);
+            }
+            var userManager = new UserManager<AppUser>(new UserStore<AppUser>(context));
+            if (!userManager.Users.Any())
+            {
+                AppUser user = new AppUser()
+                {
+                    UserName = "admin@gmail.com",
+                    Email = "admin@gmail.com",
+                };
+                userManager.Create(user, "Qwerty-1");
+                userManager.AddToRole(user.Id, "Admin");
+            }
             var genre = new List<Genre> {
                 new Genre {Name = "Action"},
                 new Genre {Name = "Shooter"},
@@ -62,8 +86,6 @@ namespace GameStore.DAL.Initializer
                 new Game {Name="Assassins Creed", Description="Assassins info...", Genre=genre.FirstOrDefault(x => x.Name=="Action"), Year=2018, Image="https://ubistatic19-a.akamaihd.net/marketingresource/ru-ru/assassins-creed/assassins-creed-odyssey/assets/images/ack_announce-slide_keyart_361691.jpg",
                 Developer=developer.FirstOrDefault(x => x.Name=="Ghost Games"), Price = 78}
             };
-            context.Roles.Add(admin);
-            context.Roles.Add(user);
             context.Developers.AddRange(developer);
             context.Genres.AddRange(genre);
             context.Games.AddRange(games);
