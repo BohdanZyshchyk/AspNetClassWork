@@ -1,4 +1,6 @@
-﻿using Store.Models;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Store.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +19,20 @@ namespace Store.Controllers
         }
         public ActionResult Index()
         {
+            var userId = User.Identity.GetUserId(); //Отримали айді користувача який зараз залогінений
+            if (userId != null)
+            {
+                var RoleId = context.Set<IdentityUserRole>().FirstOrDefault(t => t.UserId == userId).RoleId;
+                var role = context.Roles.FirstOrDefault(t => t.Id == RoleId);
+                if (role.Name == "Admin")
+                {
+                    return RedirectToAction("Index", "AdminPanel", new { area = "Admin" });
+                }
+                else if (role.Name == "Manager")
+                {
+                    return RedirectToAction("Index", "ManagerPanel", new { area = "Manager" });
+                }
+            }
             return View();
         }
         [Authorize]
@@ -32,7 +48,7 @@ namespace Store.Controllers
             {
                 Id = t.Id,
                 Email = t.Email,
-                RoleId = context.Roles.FirstOrDefault(x=> x.Id==t.Id).Id
+                RoleId = context.Roles.FirstOrDefault(x => x.Id == t.Id).Id
             }).ToList();
 
             List<RolesViewModel> roles = context.Roles.Select(t => new RolesViewModel

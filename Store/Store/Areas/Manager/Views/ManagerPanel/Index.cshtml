@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Store.Models.NewsViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create News", "Create", "ManagerPanel", new { @class = "btn btn-primary" })
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <img src="@Html.DisplayFor(modelItem => item.ImageName)" width="300" class="card-img-top" alt="...">
+                <div class="panel-heading">@Html.DisplayFor(modelItem => item.Title)</div>
+                <div class="panel-body">@Html.DisplayFor(modelItem => item.Text)</div>
+                <div class="panel-footer">
+                    @Html.DisplayFor(modelItem => item.Date)
+                    @Html.DisplayFor(modelItem => item.Category)
+                </div>
+                <div class="panel-footer">
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        </div>
+
+    }
+</div>

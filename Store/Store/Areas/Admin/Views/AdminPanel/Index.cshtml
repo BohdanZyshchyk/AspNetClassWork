@@ -1,0 +1,49 @@
+﻿@model Store.Models.UserRolesViewModel
+
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin</h2>
+
+<p>
+    @Html.ActionLink("Create Category", "CreateCategory")
+</p>
+
+
+<table class="table">
+
+
+    @foreach (var item in Model.Users)
+    {
+        using (Html.BeginForm("Index", "AdminPanel", new { userId = item.Id }, FormMethod.Post))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <select id="roleId" name="roleId" class="form-control">
+                        @foreach (var roles in Model.Roles)
+                        {
+                            if (item.RoleId.Equals(roles.RoleId))
+                            {
+                                <option selected>@roles.RoleName</option>
+                            }
+                            <option>@roles.RoleName</option>
+                        }
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" name="SetRole" value="Set" class="btn btn-warning" />
+                </td>
+            </tr>
+        }
+    }
+
+    </table>
+

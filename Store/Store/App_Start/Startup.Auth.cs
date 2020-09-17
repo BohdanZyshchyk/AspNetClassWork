@@ -54,15 +54,15 @@ namespace Store
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "2620274188285754",
+               appSecret: "5c158d9f2ed3898dac5e1754935d6a3f");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "288627683780-0e745ud10h8mun99q6e5auuanvtalphd.apps.googleusercontent.com",
+                ClientSecret = "fgDNGW-hxsRvDcW3qL7alo-_"
+            });
         }
     }
 }

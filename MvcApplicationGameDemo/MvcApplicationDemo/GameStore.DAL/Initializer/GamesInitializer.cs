@@ -1,4 +1,6 @@
 ﻿using GameStore.DAL.Entities;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,6 +11,31 @@ namespace GameStore.DAL.Initializer
     {
         protected override void Seed(ApplicationContext context)
         {
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            if (!roleManager.Roles.Any())
+            {
+                IdentityRole roleAdmin = new IdentityRole()
+                {
+                    Name = "Admin",
+                };
+                IdentityRole roleUser = new IdentityRole()
+                {
+                    Name = "User",
+                };
+                roleManager.Create(roleAdmin);
+                roleManager.Create(roleUser);
+            }
+            var userManager = new UserManager<AppUser>(new UserStore<AppUser>(context));
+            if (!userManager.Users.Any())
+            {
+                AppUser user = new AppUser()
+                {
+                    UserName = "admin@gmail.com",
+                    Email = "admin@gmail.com",
+                };
+                userManager.Create(user, "Qwerty-1");
+                userManager.AddToRole(user.Id, "Admin");
+            }
             var genre = new List<Genre> {
                 new Genre {Name = "Action"},
                 new Genre {Name = "Shooter"},

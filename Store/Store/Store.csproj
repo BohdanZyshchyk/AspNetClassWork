@@ -167,15 +167,32 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminPanelController.cs" />
+    <Compile Include="Areas\Manager\Controllers\ManagerPanelController.cs" />
+    <Compile Include="Areas\Manager\ManagerAreaRegistration.cs" />
+    <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\News.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\ImageConfig.cs" />
+    <Compile Include="Helper\Image_Helper.cs" />
+    <Compile Include="Migrations\202009041601058_init.cs" />
+    <Compile Include="Migrations\202009041601058_init.Designer.cs">
+      <DependentUpon>202009041601058_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CatgoriesViewModel.cs" />
+    <Compile Include="Models\Custom\UserAdditionalInfo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\NewsViewModel.cs" />
     <Compile Include="Models\RolesViewModel.cs" />
     <Compile Include="Models\UserRolesViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
@@ -193,6 +210,17 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminPanel\Index.cshtml" />
+    <Content Include="Areas\Manager\Views\web.config" />
+    <Content Include="Areas\User\Views\web.config" />
+    <Content Include="Areas\Manager\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Manager\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Manager\Views\ManagerPanel\Create.cshtml" />
+    <Content Include="Areas\Manager\Views\ManagerPanel\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminPanel\CreateCategory.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -238,10 +266,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Admin.cshtml" />
+    <Content Include="Views\Manage\Settings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Manager\Data\" />
+    <Folder Include="Areas\User\Controllers\" />
+    <Folder Include="Areas\User\Data\" />
+    <Folder Include="Areas\User\Views\Shared\" />
+    <Folder Include="Images\UserPhoto\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -255,6 +289,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009041601058_init.resx">
+      <DependentUpon>202009041601058_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
