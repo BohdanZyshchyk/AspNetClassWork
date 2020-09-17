@@ -3,25 +3,21 @@ using GameStore.BLL.Filters;
 using GameStore.BLL.Services.Abstraction;
 using GameStore.DAL.Entities;
 using GameStore.UI.Models;
-using GameStore.UI.Utils;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.Linq;
-using System.IO;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.Optimization;
 
-namespace GameStore.UI.Controllers
+namespace GameStore.UI.Areas.User.Controllers
 {
-    public class GamesController : Controller
+    public class MainPageController : Controller
     {
+        // GET: User/MainPage
         private readonly IGameService gameService;
         private readonly IMapper mapper;
         //  3 DI
-        public GamesController(IGameService service, IMapper _mapper)
+        public MainPageController(IGameService service, IMapper _mapper)
         {
             gameService = service;
             mapper = _mapper;
@@ -56,7 +52,7 @@ namespace GameStore.UI.Controllers
             {
                 return RedirectToAction("Index", gamesViewModel);
             }
-            return HttpNotFound() ;
+            return HttpNotFound();
         }
 
 
@@ -84,7 +80,7 @@ namespace GameStore.UI.Controllers
                 filters = new List<GameFilter>();
 
             // перевірка чи фільтр вже існує
-            var isExists =  filters.FirstOrDefault(x => x.Name == name && x.Type == type);
+            var isExists = filters.FirstOrDefault(x => x.Name == name && x.Type == type);
             if (isExists != null)
             {
                 filters.Remove(isExists);
@@ -118,74 +114,45 @@ namespace GameStore.UI.Controllers
             ViewBag.Genres = gameService.GetAllGenres();
         }
 
-        [HttpGet]
-        public ActionResult Create()
-        {
-            ViewBag.Developers = gameService.GetAllDevelopers();
-            ViewBag.Genres = gameService.GetAllGenres();
-
-            gameService.GetAllGames();
-            return View();
-        }
-        [HttpPost]
-        public ActionResult Create(GameViewModel model, HttpPostedFileBase imageFile)
-        {
-            if (ModelState.IsValid)
-            {
-                var game = mapper.Map<Game>(model);
-                game.Image = SaveImage(imageFile);
-                gameService.AddGame(game);
-
-                return RedirectToAction("Index");
-            }
-            return Create();
-        }
 
         [HttpGet]
-        public ActionResult Edit(int id)
+        public ActionResult AddToCart(int id)
         {
-            SetFilters();
             var game = gameService.GetGame(id);
-            return View(mapper.Map<GameViewModel>(game));
-        }
-        [HttpPost]
-        public ActionResult Edit(GameViewModel model)
-        {
-            if (ModelState.IsValid)
+
+            var gamesViewModel = mapper.Map<GameViewModel>(game);
+
+            if (Session["cart"] == null)
             {
-                var game = mapper.Map<Game>(model);
-                gameService.Update(game);
-                return RedirectToAction("Index");
+                List<CartItemViewModel> cart = new List<CartItemViewModel>();
+                cart.Add(new CartItemViewModel { Game = gamesViewModel, Quantity = 1 });
+                Session["cart"] = cart;
             }
-            return Edit(model.Id);
-        }
-        [HttpPost]
-        public ActionResult Delete(int id)
-        {
-            var filePath = Server.MapPath("~/Content/img/" + gameService.GetGame(id).Image);
-            if (System.IO.File.Exists(filePath))
+            else
             {
-                System.IO.File.Delete(filePath);
+                List<CartItemViewModel> cart = (List<CartItemViewModel>)Session["cart"];
+                int index = isExist(id.ToString());
+                if (index != -1)
+                {
+                    cart[index].Quantity++;
+                }
+                else
+                {
+                    cart.Add(new CartItemViewModel { Game = gamesViewModel, Quantity = 1 });
+                }
+                Session["cart"] = cart;
             }
-            gameService.Delete(id);
             return RedirectToAction("Index");
         }
 
-        public string SaveImage(HttpPostedFileBase imageFile)
+        private int isExist(string id)
         {
-            string fileName = Guid.NewGuid().ToString() + ".jpg";
-            string fullPathImage = Server.MapPath(ImageConfig.ProductImagePath) + "\\" + fileName;
-            using (Bitmap bmp = new Bitmap(imageFile.InputStream))
-            {
-                var readyImage = Image_Helper.CreateImage(bmp, 450, 450);
-                if (readyImage != null)
-                {
-                    readyImage.Save(fullPathImage, ImageFormat.Jpeg);
-                    return fileName;
-                }
-            }
-            return "no image";
+            List<CartItemViewModel> cart = (List<CartItemViewModel>)Session["cart"];
+            for (int i = 0; i < cart.Count; i++)
+                if (cart[i].Game.Id.Equals(id))
+                    return i;
+            return -1;
         }
+
     }
 }
-// new GamesController(new GameService(new EFRepository(new ApplicationContext())))
