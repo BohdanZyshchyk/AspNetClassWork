@@ -43,24 +43,6 @@ namespace GameStore.UI.Controllers
             else games = gameService.GetAllGames().ToList();
 
             var gamesViewModel = mapper.Map<ICollection<GameViewModel>>(games);
-
-            #region mapping
-            //  var gamesViewModel = new List<GameViewModel>();
-            //foreach (var item in games)
-            //{
-            //    gamesViewModel.Add(new GameViewModel
-            //    {
-            //        Id = item.Id,
-            //        Name = item.Name,
-            //        Developer = item.Developer.Name,
-            //        Genre = item.Genre.Name,
-            //        Year = item.Year,
-            //        Description = item.Description,
-            //        Image = item.Image
-            //    });
-            //} 
-            #endregion
-
             return View(gamesViewModel);
         }
 
