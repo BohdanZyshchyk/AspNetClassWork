@@ -1,0 +1,9 @@
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\bin\Debug\netcoreapp3.1\BaseJWTApplication.DTO.deps.json
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\bin\Debug\netcoreapp3.1\BaseJWTApplication.DTO.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\bin\Debug\netcoreapp3.1\BaseJWTApplication.DTO.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication.DTO.csprojAssemblyReference.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication.DTO.AssemblyInfoInputs.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication.DTO.AssemblyInfo.cs
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication.DTO.csproj.CoreCompileInputs.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication.DTO.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication.DTO.pdb

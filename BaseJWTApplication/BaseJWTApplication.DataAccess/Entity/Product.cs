@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+
+namespace BaseJWTApplication.DataAccess.Entity
+{
+   public class Product
+    {
+        [Key]
+        public int Id { get; set; }
+        [Required]
+        public string Title{ get; set; }
+        [Required]
+        public float Price { get; set; }
+        [Required]
+        public string ImageURL { get; set; }
+        [Required]
+        public string Description { get; set; }
+    }
+}

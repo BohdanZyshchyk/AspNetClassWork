@@ -1,0 +1,12 @@
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\bin\Debug\netcoreapp3.1\BaseJWTApplication.Domain.deps.json
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\bin\Debug\netcoreapp3.1\BaseJWTApplication.Domain.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\bin\Debug\netcoreapp3.1\BaseJWTApplication.DataAccess.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\bin\Debug\netcoreapp3.1\BaseJWTApplication.DataAccess.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\obj\Debug\netcoreapp3.1\BaseJWTApplication.Domain.csprojAssemblyReference.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\obj\Debug\netcoreapp3.1\BaseJWTApplication.Domain.AssemblyInfoInputs.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\obj\Debug\netcoreapp3.1\BaseJWTApplication.Domain.AssemblyInfo.cs
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\obj\Debug\netcoreapp3.1\BaseJWTApplication.Domain.csproj.CopyComplete
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\bin\Debug\netcoreapp3.1\BaseJWTApplication.Domain.pdb
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\obj\Debug\netcoreapp3.1\BaseJWTApplication.Domain.csproj.CoreCompileInputs.cache
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\obj\Debug\netcoreapp3.1\BaseJWTApplication.Domain.dll
+C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\BaseJWTApplication\BaseJWTApplication.Domain\obj\Debug\netcoreapp3.1\BaseJWTApplication.Domain.pdb
