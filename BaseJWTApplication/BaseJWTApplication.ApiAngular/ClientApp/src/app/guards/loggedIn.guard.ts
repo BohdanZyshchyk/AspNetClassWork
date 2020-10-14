@@ -9,9 +9,11 @@ import { AuthService } from '../Services/auth.service';
 })
 export class LoggedInGuard implements CanActivate {
 
-    constructor(private authService:AuthService,
-        private router:Router,
-        private notifier: NotifierService) { }
+    constructor(
+        private authService: AuthService,
+        private router: Router,
+        private notifier: NotifierService
+    ) { }
 
     canActivate(
         next: ActivatedRouteSnapshot,
@@ -23,9 +25,9 @@ export class LoggedInGuard implements CanActivate {
         if (this.authService.isLoggedIn()) {
             return true;
         }
-        else{
+        else {
             this.router.navigate(['/sign-in']);
-            this.notifier.notify("error", "you need logg in");
+            this.notifier.notify("error", "You dont login");
             return false;
         }
     }

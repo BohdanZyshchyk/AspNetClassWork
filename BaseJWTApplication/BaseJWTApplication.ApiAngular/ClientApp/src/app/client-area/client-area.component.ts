@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-client-area',
-  templateUrl: './client-area.component.html',
-  styleUrls: ['./client-area.component.css']
+  selector: 'app-Client-area',
+  templateUrl: './Client-area.component.html',
+  styleUrls: ['./Client-area.component.scss']
 })
 export class ClientAreaComponent implements OnInit {
 

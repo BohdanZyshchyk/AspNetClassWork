@@ -10,6 +10,7 @@ export class NavMenuComponent implements OnInit {
   isExpanded = false;
   isLogin: boolean = false;
   constructor(private authService: AuthService) { }
+
   ngOnInit() {
     var token = localStorage.getItem('token');
     if (token != null) {
@@ -21,12 +22,15 @@ export class NavMenuComponent implements OnInit {
     this.authService.statusLogin.subscribe(
       (data) => {
         this.isLogin = data;
-      });
+      }
+    )
   }
 
-  Logout(){
+  Logout() {
     this.authService.Logout();
   }
+
+
   collapse() {
     this.isExpanded = false;
   }

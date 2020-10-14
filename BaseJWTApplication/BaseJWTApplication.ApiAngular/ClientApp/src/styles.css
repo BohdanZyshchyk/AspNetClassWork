@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
+
 @import "~angular-notifier/styles";
 @import "~ng-zorro-antd/ng-zorro-antd.min.css";
+
 a {
   color: #0366d6;
 }

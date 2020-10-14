@@ -11,31 +11,47 @@ import { SignUpModel } from '../Models/sign-up.model';
 })
 export class AuthService {
 
-  constructor(private http: HttpClient,
+  constructor(
+    private http: HttpClient,
     private router: Router) { }
-  baseUrl = "api/Acount"
+  baseUrl = "/api/Account";
   statusLogin = new EventEmitter<boolean>();
 
   SignUp(model: SignUpModel): Observable<ApiResponse> {
-    return this.http.post<ApiResponse>(this.baseUrl + '/register', model);
+    return this.http.post<ApiResponse>(this.baseUrl + "/register", model);
   }
 
   SignIn(model: SignInModel): Observable<ApiResponse> {
-    return this.http.post<ApiResponse>(this.baseUrl + '/login', model);
+    return this.http.post<ApiResponse>(this.baseUrl + "/login", model);
   }
 
   Logout() {
     localStorage.removeItem('token');
     localStorage.removeItem('role');
-    this.statusLogin.emit(false)
-    this.router.navigate(['/']);
+
+    this.statusLogin.emit(false);
+    this.router.navigate(['/'])
   }
-  isLoggedIn(){
+
+  isLoggedIn() {
     var token = localStorage.getItem('token');
-    return token != null;
+    if (token != null) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
-  isAdmin(){
+
+  isAdmin() {
     var role = localStorage.getItem('role');
-    return role === 'Admin';
+    if (role === "Admin") {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
+
+
 }

@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">Store</a>
+      <a class="navbar-brand" [routerLink]="['/']">Vlandr Store</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
@@ -11,13 +11,15 @@
           <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
             <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
           </li>
-          <li *ngIf="isLogin == false" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/sign-in']">Sign in</a>
+          <li *ngIf="isLogin === false" class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/sign-in']">Sign In</a>
           </li>
-          <li *ngIf="isLogin == false" class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/sign-up']">Sign up</a>
+          <li *ngIf="isLogin === false" class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/sign-up']">Sign Up</a>
           </li>
-          <li (click)="Logout()" style="cursor: pointer;" *ngIf="isLogin == true" class="nav-item" [routerLinkActive]="['link-active']">
+
+          <li (click)="Logout()" *ngIf="isLogin == true" style="cursor: pointer;" class="nav-item"
+            [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark">Logout</a>
           </li>
         </ul>
