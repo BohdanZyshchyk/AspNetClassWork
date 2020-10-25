@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BaseJWTApplication819.DataAccess;
+using BaseJWTApplication819.DataAccess.Entity;
 using BaseJWTApplication819.DTO.Models;
+using BaseJWTApplication819.DTO.Models.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,6 +33,60 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
                 Title = t.Title,
             }).ToList();
             return data;
+        }
+        [Authorize(Roles = "Admin")]
+        [HttpPost("add")]
+        public ResultDTO AddProduct([FromBody] ProductDTO model)
+        {
+            var product = new Product
+            {
+                Description = model.Description,
+                ImageURL = model.Image,
+                Price = model.Price,
+                Title = model.Title
+            };
+            _context.Products.Add(product);
+            _context.SaveChanges();
+            return new ResultDTO
+            {
+                Message = "Ok",
+                Status = 200
+            };
+        }
+        [HttpGet("search")]
+        public IEnumerable<ProductDTO> SearchProduct([FromQuery] string search)
+        {
+            if (string.IsNullOrWhiteSpace(search))
+            {
+                return getAllProducts();
+            }
+
+            search = search.ToLower();
+            var products = _context.Products
+                                  .Where(x => x.Title.ToLower().Contains(search))
+                                  .Select(x => new ProductDTO
+                                  {
+                                      Description = x.Description,
+                                      Id = x.Id,
+                                      Image = x.ImageURL,
+                                      Price = x.Price,
+                                      Title = x.Title
+                                  }).ToArray();
+
+            return products;
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost("delete")]
+        public IEnumerable<ProductDTO> DeleteProduct([FromBody] int id)
+        {
+            var product = _context.Products.FirstOrDefault(x => x.Id == id);
+
+            _context.Products.Remove(product);
+
+            _context.SaveChanges();
+
+            return getAllProducts();
         }
     }
 }

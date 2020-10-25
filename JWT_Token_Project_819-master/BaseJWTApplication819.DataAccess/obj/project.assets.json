@@ -799,19 +799,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BoZ\\.nuget\\packages\\": {}
+    "C:\\Users\\bohdan.zyshchuk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BoZ\\Documents\\ASP NET ITSTEP\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
       "projectName": "BaseJWTApplication819.DataAccess",
-      "projectPath": "C:\\Users\\BoZ\\Documents\\ASP NET ITSTEP\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\BoZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BoZ\\Documents\\ASP NET ITSTEP\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\bohdan.zyshchuk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BoZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bohdan.zyshchuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -859,7 +859,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

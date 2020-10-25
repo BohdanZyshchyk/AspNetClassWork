@@ -25,3 +25,12 @@ C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\JWT_Token_Project_819-mast
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.csproj.CoreCompileInputs.cache
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.dll
 C:\Users\BoZ\Documents\ASP NET ITSTEP\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\bin\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.deps.json
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\bin\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\bin\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.pdb
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.csprojAssemblyReference.cache
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.csproj.CoreCompileInputs.cache
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.AssemblyInfoInputs.cache
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.AssemblyInfo.cs
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.dll
+C:\Users\bohdan.zyshchuk\Documents\AspNetClassWork\JWT_Token_Project_819-master\BaseJWTApplication819.DTO\obj\Debug\netcoreapp3.1\BaseJWTApplication819.DTO.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1CR5/kiB88jewpnva1m8hZdIkBuEDuidelQDy6hMZRzy3Jlrm5gCwH2rg0lMmJCfUgpF5vCtxsRou2+VYktbow==",
+  "dgSpecHash": "vzR2SNhXvQgCzuK3b6uW7ly6f+1Q5R6mOvq+wN2g98QufgMgf5mFfCO37GyqfjPeObzuS+6wRXKLNiNuk036ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BoZ\\Documents\\ASP NET ITSTEP\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DTO\\BaseJWTApplication819.DTO.csproj",
+  "projectFilePath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DTO\\BaseJWTApplication819.DTO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
