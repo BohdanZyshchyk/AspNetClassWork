@@ -16,6 +16,12 @@
         <td>{{ data.title }}</td>
         <td>{{ data.price }}</td>
         <td>{{ data.description }}</td>
+        <td>
+          <button nz-button nzType="primary" nz-popconfirm
+            nzPopconfirmTitle="Are you sure you want to delete this product?" nzPopconfirmPlacement="bottom"
+            nzOkText="OK" nzCancelText="Cancel" (nzOnConfirm)="deleteClick(data.id)">
+            Delete</button>
+        </td>
       </tr>
     </tbody>
   </nz-table>

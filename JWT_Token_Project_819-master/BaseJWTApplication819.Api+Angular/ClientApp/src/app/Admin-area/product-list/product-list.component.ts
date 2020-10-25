@@ -10,6 +10,8 @@ import { ProductService } from 'src/app/Services/product.service';
 })
 export class ProductListComponent implements OnInit {
 
+  products: Product[];
+  searchInput: string;
   constructor(private prodService:ProductService,
     private spinner: NgxSpinnerService) { }
 
@@ -22,6 +24,21 @@ export class ProductListComponent implements OnInit {
         this.spinner.hide();
       }
     )
+  }
+  search() {
+    console.log(this.searchInput);
+    this.prodService.searchProduct(this.searchInput).subscribe(data => {
+      console.log(data);
+      this.products = data;
+      console.log(this.products);
+    });
+  }
+
+  delete(id: number) {
+    console.log(id);
+    this.prodService.deleteProduct(id).subscribe(data => {
+      this.products = data;
+    });
   }
   listOfColumn = [
     {

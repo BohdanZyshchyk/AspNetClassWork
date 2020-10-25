@@ -1,1 +1,31 @@
-<p>add-product works!</p>
+<form nz-form (ngSubmit)="submitAdd()">
+    <nz-form-item>
+      <nz-form-label nzFor="title">Title</nz-form-label>
+      <nz-form-control>
+        <input nz-input name="title" type="text" id="title" [(ngModel)]="product.title">
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="description">Description</nz-form-label>
+      <nz-form-control >
+        <input nz-input name="description" type="text" id="description" [(ngModel)]="product.description">
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label  nzFor="price">Price</nz-form-label>
+      <nz-form-control >
+        <input nz-input name="price" type="number" id="price" [(ngModel)]="product.price">
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="imageURL">Image</nz-form-label>
+      <nz-form-control >
+        <input nz-input name="imageURL" type="text" id="imageURL" [(ngModel)]="product.imageURL">
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row class="register-area">
+      <nz-form-control [nzOffset]="6">
+        <button nz-button nzType="primary">Submit</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>

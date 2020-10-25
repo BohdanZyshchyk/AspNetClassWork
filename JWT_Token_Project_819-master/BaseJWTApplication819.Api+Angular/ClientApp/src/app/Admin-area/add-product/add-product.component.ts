@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from 'src/app/Models/product.model';
+import { ProductService } from 'src/app/Services/product.service';
 
 @Component({
   selector: 'app-add-product',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddProductComponent implements OnInit {
 
-  constructor() { }
-
+  product: Product;
+  constructor(private productService: ProductService, private router: Router) { }
   ngOnInit() {
+  }
+
+  submitAdd() {
+    this.productService.addProduct(this.product).subscribe(data => {
+      this.router.navigate(['/admin']);
+    });
   }
 
 }
