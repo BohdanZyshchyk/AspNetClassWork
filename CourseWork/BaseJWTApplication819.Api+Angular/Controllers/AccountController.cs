@@ -63,9 +63,7 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
 
                 var userProfile = new UserAdditionalInfo()
                 {
-                    Address = model.Address,
                     Image = "default.jpg",
-                    FullName = model.FullName,
                     Id = user.Id
                 };
 

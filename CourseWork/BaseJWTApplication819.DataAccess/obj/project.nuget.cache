@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L+Vc/EzJ+0MpV81mgiZd01hsWIrllmVotn8FyvJTrUpy4csns5mkDy9Pa52u2U7+wv1g/c/lLFHwavcqVVYsWg==",
+  "dgSpecHash": "1O1XnOisAJ54psM8yG1ZKmUCTXzrN9edEKWEV9qfvQTRTTZA2tyb7xVgOUh28Rzu0qTBAwswX8hB5UEoBfBdyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bohdan.zyshchuk\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.1\\microsoft.aspnetcore.cryptography.internal.3.1.1.nupkg.sha512",
     "C:\\Users\\bohdan.zyshchuk\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.1\\microsoft.aspnetcore.cryptography.keyderivation.3.1.1.nupkg.sha512",

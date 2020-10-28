@@ -13,12 +13,16 @@ namespace BaseJWTApplication819.DataAccess.Entity
         public string Image { get; set; }
         [Required]
         public string Date { get; set; }
-        [Required]
-        public virtual User User { get; set; }
+        //[Required]
+        //public virtual UserAdditionalInfo Creator { get; set; }
+        public int Rating { get; set; }
+        
+        public virtual List<CreatedMemes> CreatedMemes {get; set;}
         public virtual List<Comment> Comments {get; set;}
         public Meme()
         {
             Comments = new List<Comment>();
+            CreatedMemes = new List<CreatedMemes>();
         }
     }
 }

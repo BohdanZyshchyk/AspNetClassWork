@@ -27,34 +27,6 @@ namespace BaseJWTApplication819.Api_Angular.Helper
         }
         private static void SeedUsers(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, EFContext _context)
         {
-
-            _context.Products.Add(new Product
-            {
-                Title = "Nuts",
-                Price = 50,
-                Description = "...",
-                ImageURL = "https://images-na.ssl-images-amazon.com/images/I/71oR9w5AjbL._SX569_.jpg"
-            });
-
-            _context.Products.Add(new Product
-            {
-                Title = "Milk",
-                Price = 20,
-                Description = "...",
-                ImageURL = "https://greenfood.in.ua/image/cache/catalog/tovar/napij-vivsjanij-ultrapasterizovanij-vega-milk-640x640.jpg"
-            });
-
-            _context.Products.Add(new Product
-            {
-                Title = "Apple",
-                Price = 10,
-                Description = "...",
-                ImageURL = "https://sites.google.com/site/knowyourfruit/_/rsrc/1284636557816/know-your-apples/Apple%2002.jpg?height=362&width=400"
-            });
-
-            _context.SaveChanges();
-
-
             var roleName = "Admin";
             if (roleManager.FindByNameAsync(roleName).Result == null)
             {
@@ -67,10 +39,7 @@ namespace BaseJWTApplication819.Api_Angular.Helper
                     Name = "User"
                 }).Result;
 
-
-
-
-                string email = "admin@gmail.com";
+                string email = "a@m.com";
                 var admin = new User
                 {
                     Email = email,
@@ -78,8 +47,8 @@ namespace BaseJWTApplication819.Api_Angular.Helper
                 };
                 var andrii = new User
                 {
-                    Email = "cuanid236316@gmail.com",
-                    UserName = "cuanid236316@gmail.com"
+                    Email = "u@m.com",
+                    UserName = "u@m.com"
                 };
 
                 var resultAdmin = userManager.CreateAsync(admin, "Qwerty1-").Result;
@@ -88,6 +57,16 @@ namespace BaseJWTApplication819.Api_Angular.Helper
                 var resultAndrii = userManager.CreateAsync(andrii, "Qwerty1-").Result;
                 resultAndrii = userManager.AddToRoleAsync(andrii, "User").Result;
             }
+
+            var creator = _context.Users.FirstOrDefault(x => x.Email == "a@m.com");
+            _context.Memes.Add(new Meme
+            {
+                Date = "20.20.2020",
+                Image = "https://img-9gag-fun.9cache.com/photo/awBP97R_700bwp.webp",
+                Rating = 1
+            });
+
+            _context.SaveChanges();
         }
     }
 }

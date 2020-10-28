@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj": {}
+    "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj": {
+    "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
         "projectName": "BaseJWTApplication819.DataAccess",
-        "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
+        "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj",
         "packagesPath": "C:\\Users\\bohdan.zyshchuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bohdan.zyshchuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj": {
+    "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj",
         "projectName": "BaseJWTApplication819.Domain",
-        "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj",
+        "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.Domain\\BaseJWTApplication819.Domain.csproj",
         "packagesPath": "C:\\Users\\bohdan.zyshchuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.Domain\\obj\\",
+        "outputPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bohdan.zyshchuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj"
+              "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DataAccess\\BaseJWTApplication819.DataAccess.csproj"
               }
             }
           }

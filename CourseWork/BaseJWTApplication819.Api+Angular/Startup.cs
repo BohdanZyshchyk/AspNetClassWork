@@ -131,7 +131,7 @@ namespace BaseJWTApplication819.Api_Angular
             });
 
 
-           // SeederDatabase.SeedData(app.ApplicationServices, env, Configuration);
+            SeederDatabase.SeedData(app.ApplicationServices, env, Configuration);
 
         }
     }

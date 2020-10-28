@@ -15,5 +15,7 @@ namespace BaseJWTApplication819.DataAccess.Entity
         public string Date { get; set; }
         [Required]
         public virtual User User { get; set; }
+        [Required]
+        public virtual Meme Meme { get; set; }
     }
 }

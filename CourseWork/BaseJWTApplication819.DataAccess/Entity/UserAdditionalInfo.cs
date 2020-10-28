@@ -12,11 +12,15 @@ namespace BaseJWTApplication819.DataAccess.Entity
         [Key]
         public string Id { get; set; }
         [Required]
-        public string FullName { get; set; }
-        [Required]
-        public string Address { get; set; }
-        [Required]
         public string Image { get; set; }
+
+        public virtual List<CreatedMemes> CreatedMemes { get; set; }
+        //public virtual List<Meme> UpvotedMemes { get; set; }
+        public virtual List<Comment> Comments { get; set; }
         public virtual User User { get; set; }
+        public UserAdditionalInfo()
+        {
+            CreatedMemes = new List<CreatedMemes>();
+        }
     }
 }

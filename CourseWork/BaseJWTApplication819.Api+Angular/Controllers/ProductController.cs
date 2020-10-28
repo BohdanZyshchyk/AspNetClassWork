@@ -18,18 +18,18 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
         {
             _context = context;
         }
-        [HttpGet]
-        public List<ProductDTO> getAllProducts()
-        {
-            var data = _context.Products.Select(t => new ProductDTO
-            {
-                Id = t.Id,
-                Description = t.Description,
-                Image = t.ImageURL,
-                Price = t.Price,
-                Title = t.Title,
-            }).ToList();
-            return data;
-        }
+        //[HttpGet]
+        //public List<ProductDTO> getAllProducts()
+        //{
+        //    var data = _context.Products.Select(t => new ProductDTO
+        //    {
+        //        Id = t.Id,
+        //        Description = t.Description,
+        //        Image = t.ImageURL,
+        //        Price = t.Price,
+        //        Title = t.Title,
+        //    }).ToList();
+        //    return data;
+        //}
     }
 }

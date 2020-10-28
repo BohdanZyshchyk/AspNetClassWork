@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DTO\\BaseJWTApplication819.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DTO\\BaseJWTApplication819.DTO.csproj",
       "projectName": "BaseJWTApplication819.DTO",
-      "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DTO\\BaseJWTApplication819.DTO.csproj",
+      "projectPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DTO\\BaseJWTApplication819.DTO.csproj",
       "packagesPath": "C:\\Users\\bohdan.zyshchuk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\JWT_Token_Project_819-master\\BaseJWTApplication819.DTO\\obj\\",
+      "outputPath": "C:\\Users\\bohdan.zyshchuk\\Documents\\AspNetClassWork\\CourseWork\\BaseJWTApplication819.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bohdan.zyshchuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
