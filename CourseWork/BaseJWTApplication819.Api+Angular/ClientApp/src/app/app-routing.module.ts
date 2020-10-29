@@ -18,7 +18,7 @@ const routes: Routes = [
     { path: 'sign-in', canActivate: [NotLoginGuard], pathMatch: 'full', component: SignInComponent },
     { path: 'sign-up', canActivate: [NotLoginGuard], pathMatch: 'full', component: SignUpComponent },
     { path: 'meme', canActivate: [NotLoginGuard], pathMatch: 'full', component: MemeComponent },
-    { path: 'memelist', canActivate: [NotLoginGuard], pathMatch: 'full', component: MemeListComponent },
+    { path: 'memelist',  pathMatch: 'full', component: MemeListComponent },
     {
         path: 'admin-panel', canActivate: [AdminGuard], component: AdminAreaComponent,
         children: [
@@ -35,3 +35,4 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule { }
+// canActivate: [NotLoginGuard],

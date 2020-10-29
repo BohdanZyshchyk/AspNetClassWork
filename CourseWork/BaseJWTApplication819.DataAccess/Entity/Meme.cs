@@ -12,6 +12,8 @@ namespace BaseJWTApplication819.DataAccess.Entity
         [Required]
         public string Image { get; set; }
         [Required]
+        public string Title { get; set; }
+        [Required]
         public string Date { get; set; }
         //[Required]
         //public virtual UserAdditionalInfo Creator { get; set; }

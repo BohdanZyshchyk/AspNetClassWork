@@ -61,10 +61,11 @@ namespace BaseJWTApplication819.Api_Angular.Helper
             var creator = _context.Users.FirstOrDefault(x => x.Email == "a@m.com");
             _context.Memes.Add(new Meme
             {
+                Title = "Test meme",
                 Date = "20.20.2020",
                 Image = "https://img-9gag-fun.9cache.com/photo/awBP97R_700bwp.webp",
                 Rating = 1
-            });
+            }); ;
 
             _context.SaveChanges();
         }
