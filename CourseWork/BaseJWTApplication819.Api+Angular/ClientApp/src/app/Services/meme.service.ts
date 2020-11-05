@@ -10,12 +10,20 @@ export class MemeService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl = "/api/Meme";
+  memeUrl = "/api/Meme";
 
   getAllMemes(): Observable<Meme[]> {
-    return this.http.get<Meme[]>(this.baseUrl);
+    return this.http.get<Meme[]>(this.memeUrl);
   }
   upvoteMeme(id:number): Observable<Meme[]>{
-    return this.http.get<Meme[]>(`${this.baseUrl}/upvote/` + id);
+    return this.http.get<Meme[]>(`${this.memeUrl}/upvote/` + id);
   }
+  downvoteMeme(id:number): Observable<Meme[]>{
+    return this.http.get<Meme[]>(`${this.memeUrl}/downvote/` + id);
+  }
+
+  getMemeById(id: number): Observable<Meme>{
+    return this.http.get<Meme>(`${this.memeUrl}/detail/`+ id);
+  }
+
 }

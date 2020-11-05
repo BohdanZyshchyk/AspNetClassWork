@@ -17,7 +17,7 @@ const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomeComponent },
     { path: 'sign-in', canActivate: [NotLoginGuard], pathMatch: 'full', component: SignInComponent },
     { path: 'sign-up', canActivate: [NotLoginGuard], pathMatch: 'full', component: SignUpComponent },
-    { path: 'meme', canActivate: [NotLoginGuard], pathMatch: 'full', component: MemeComponent },
+    { path: 'meme/:id', pathMatch: 'full', component: MemeComponent },
     { path: 'memelist',  pathMatch: 'full', component: MemeListComponent },
     {
         path: 'admin-panel', canActivate: [AdminGuard], component: AdminAreaComponent,

@@ -64,7 +64,34 @@ namespace BaseJWTApplication819.Api_Angular.Helper
                 Title = "Test meme",
                 Date = "20.20.2020",
                 Image = "https://img-9gag-fun.9cache.com/photo/awBP97R_700bwp.webp",
-                Rating = 1
+                Rating = 1,
+                Comments = new List<Comment>
+                {
+                    new Comment
+                    {
+                        Date = "20.20.2020",
+                        Text = "Some comment just for test",
+                        User = creator
+                    },
+                    new Comment
+                    {
+                        Date = "20.20.2020",
+                        Text = "Some comment just for test",
+                        User = creator
+                    },
+                    new Comment
+                    {
+                        Date = "20.20.2020",
+                        Text = "Some comment just for test",
+                        User = creator
+                    },
+                    new Comment
+                    {
+                        Date = "20.20.2020",
+                        Text = "Some comment just for test",
+                        User = creator
+                    }
+                }
             }); ;
 
             _context.SaveChanges();

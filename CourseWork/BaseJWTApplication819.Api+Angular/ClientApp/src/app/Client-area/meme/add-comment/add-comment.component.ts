@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MemeComment } from 'src/app/Models/comment.model';
+import { CommentsService } from 'src/app/Services/comments.service';
+import jwt_decode from "jwt-decode";
 
 @Component({
   selector: 'app-add-comment',
@@ -7,40 +11,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddCommentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private commentServ: CommentsService,
+    private router: Router) { }
 
   ngOnInit() {
+    this.userId = jwt_decode(localStorage.getItem('token')).id;
   }
 
+  @Input() memeId: number;
+  userId: string;
   data: any[] = [];
   submitting = false;
-  user = {
-    author: 'Han Solo',
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
-  };
   inputValue = '';
 
   handleSubmit(): void {
     this.submitting = true;
     const content = this.inputValue;
     this.inputValue = '';
-    setTimeout(() => {
-      this.submitting = false;
-      this.data = [
-        ...this.data,
-        {
-          ...this.user,
-          content,
-          datetime: new Date(),
-          displayTime: new Date()
-        }
-      ].map(e => {
-        return {
-          ...e,
-          displayTime: new Date()
-        };
-      });
-    }, 800);
+    
+    const commentAdd = new MemeComment(0, content, new Date().toString(), "test", this.userId, this.memeId.toString());
+    console.log("Comment");
+    console.log(commentAdd);
+    this.commentServ.addComment(commentAdd).subscribe(
+      data => {
+        this.router.navigate([`/meme/${this.memeId}`]);
+      }
+    )
+  }
+
+  onchange() {
+    console.log("ONCHANGE");
+    console.log(this.inputValue);
   }
 
 }

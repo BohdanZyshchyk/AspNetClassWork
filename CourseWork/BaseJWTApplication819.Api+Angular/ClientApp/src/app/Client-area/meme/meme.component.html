@@ -1,12 +1,12 @@
 <div class="container">
-  <h2>Meme Title</h2>
+  <h2>{{meme.title}}</h2>
   <div class="row">
     <div class="col-6">
-      <img src="https://img-9gag-fun.9cache.com/photo/awBP97R_700bwp.webp" width="100%" alt="" srcset="" />
+      <img [src]="meme.image" width="100%" alt="" srcset="" />
     </div>
     <div class="col-6" >
-      <app-comment-list class="comments"></app-comment-list>
-      <app-add-comment></app-add-comment>
+      <app-comment-list class="comments" [memeId]="memeId"></app-comment-list>
+      <app-add-comment [memeId]="memeId"></app-add-comment>
     </div>
   </div>
 </div>

@@ -1,3 +1,4 @@
+using AutoMapper;
 using BaseJWTApplication819.Api_Angular.Helper;
 using BaseJWTApplication819.DataAccess;
 using BaseJWTApplication819.DataAccess.Entity;
@@ -33,7 +34,7 @@ namespace BaseJWTApplication819.Api_Angular
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-
+            services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<EFContext>(opt =>
                 opt.UseSqlServer(Configuration["ConnectionString"],
                 b => b.MigrationsAssembly("BaseJWTApplication819.Api+Angular"))
@@ -131,7 +132,7 @@ namespace BaseJWTApplication819.Api_Angular
             });
 
 
-            SeederDatabase.SeedData(app.ApplicationServices, env, Configuration);
+            //SeederDatabase.SeedData(app.ApplicationServices, env, Configuration);
 
         }
     }

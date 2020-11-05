@@ -50,6 +50,13 @@ export class MemeListComponent implements OnInit {
     })
   }
 
+  downvote(id:number){
+    console.log(id)
+    this.memeService.downvoteMeme(id).subscribe(data=>{
+      this.memeList = data;
+    })
+  }
+
   
 
 }
