@@ -15,11 +15,17 @@ export class MemeService {
   getAllMemes(): Observable<Meme[]> {
     return this.http.get<Meme[]>(this.memeUrl);
   }
-  upvoteMeme(id:number): Observable<Meme[]>{
-    return this.http.get<Meme[]>(`${this.memeUrl}/upvote/` + id);
+  getUpvotedMemes():Observable<Meme[]> {
+    return this.http.get<Meme[]>(`${this.memeUrl}/getupvote`);
   }
-  downvoteMeme(id:number): Observable<Meme[]>{
-    return this.http.get<Meme[]>(`${this.memeUrl}/downvote/` + id);
+  getDownvotedMemes():Observable<Meme[]> {
+    return this.http.get<Meme[]>(`${this.memeUrl}/getdownvote`);
+  }
+  upvoteMeme(id:number, userId:string): Observable<Meme[]>{
+    return this.http.get<Meme[]>(`${this.memeUrl}/upvote/${id}/${userId}`);
+  }
+  downvoteMeme(id:number, userId: string): Observable<Meme[]>{
+    return this.http.get<Meme[]>(`${this.memeUrl}/downvote/${id}/${userId}`);
   }
 
   getMemeById(id: number): Observable<Meme>{

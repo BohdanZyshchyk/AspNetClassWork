@@ -20,6 +20,7 @@ namespace BaseJWTApplication819.DataAccess.Entity
         public int Rating { get; set; }
         
         public virtual List<CreatedMemes> CreatedMemes {get; set;}
+        public virtual List<UpvotedMemes> UpvotedMemes { get; set;}
         public virtual List<Comment> Comments {get; set;}
         public Meme()
         {

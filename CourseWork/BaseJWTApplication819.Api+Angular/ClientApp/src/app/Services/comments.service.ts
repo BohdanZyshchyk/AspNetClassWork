@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { MemeComment } from '../Models/comment.model';
@@ -12,6 +12,7 @@ export class CommentsService {
   constructor(private http: HttpClient) { }
 
   commentUrl = "/api/Comments"
+  onChanged = new EventEmitter<boolean>();
   getAllComments(id:number): Observable<MemeComment[]>{
     console.log("Meme id on service")
     console.log(id)

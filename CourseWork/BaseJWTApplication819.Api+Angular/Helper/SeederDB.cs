@@ -95,6 +95,21 @@ namespace BaseJWTApplication819.Api_Angular.Helper
             }); ;
 
             _context.SaveChanges();
+
+            _context.UserAdditionalInfos.Add(new UserAdditionalInfo
+            {
+                User = creator,
+                Image = "test",
+            });
+            _context.SaveChanges();
+            var user = _context.UserAdditionalInfos.FirstOrDefault(x => x.User.Id == creator.Id);
+            var meme = _context.Memes.FirstOrDefault();
+            _context.UpvotedMemes.Add(new UpvotedMemes
+            {
+                User = user,
+                Meme = meme
+            });
+            _context.SaveChanges();
         }
     }
 }

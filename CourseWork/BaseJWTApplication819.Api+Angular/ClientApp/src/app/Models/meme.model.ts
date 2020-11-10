@@ -4,6 +4,7 @@ export class Meme {
   public date: string;
   public image: string;
   public rating: number;
+  public isUpvoted:boolean;
 
   constructor(Id: number, Title:string, Date: string, Image: string, Rating: number) {
     this.id = Id
@@ -11,5 +12,6 @@ export class Meme {
     this.title = Title
     this.image = Image
     this.rating = Rating
+    this.isUpvoted = false;
   }
 }

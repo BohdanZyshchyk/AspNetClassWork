@@ -2,7 +2,7 @@
     <nz-avatar nz-comment-avatar nzIcon="user" ></nz-avatar>
     <nz-comment-content >
       <nz-form-item>
-        <textarea nz-input [(ngModel)]="inputValue" rows="4"></textarea>
+        <textarea nz-input [(ngModel)]="inputValue" rows="4" (click)="checklogged()"></textarea>
       </nz-form-item>
       <nz-form-item>
         <button nz-button nzType="primary" [nzLoading]="submitting" [disabled]="!inputValue" (click)="handleSubmit()">

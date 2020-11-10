@@ -4,14 +4,16 @@ using BaseJWTApplication819.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BaseJWTApplication819.Api_Angular.Migrations
 {
     [DbContext(typeof(EFContext))]
-    partial class EFContextModelSnapshot : ModelSnapshot
+    [Migration("20201105184059_upvote")]
+    partial class upvote
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,21 +97,6 @@ namespace BaseJWTApplication819.Api_Angular.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Memes");
-                });
-
-            modelBuilder.Entity("BaseJWTApplication819.DataAccess.Entity.UpvotedMemes", b =>
-                {
-                    b.Property<int>("MemeId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("MemeId", "UserId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UpvotedMemes");
                 });
 
             modelBuilder.Entity("BaseJWTApplication819.DataAccess.Entity.User", b =>
@@ -351,21 +338,6 @@ namespace BaseJWTApplication819.Api_Angular.Migrations
 
                     b.HasOne("BaseJWTApplication819.DataAccess.Entity.UserAdditionalInfo", "User")
                         .WithMany("CreatedMemes")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("BaseJWTApplication819.DataAccess.Entity.UpvotedMemes", b =>
-                {
-                    b.HasOne("BaseJWTApplication819.DataAccess.Entity.Meme", "Meme")
-                        .WithMany("UpvotedMemes")
-                        .HasForeignKey("MemeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BaseJWTApplication819.DataAccess.Entity.UserAdditionalInfo", "User")
-                        .WithMany("UpvotedMemes")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

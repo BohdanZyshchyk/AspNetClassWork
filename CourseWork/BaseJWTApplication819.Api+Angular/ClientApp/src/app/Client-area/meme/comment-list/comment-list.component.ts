@@ -10,17 +10,24 @@ import { CommentsService } from 'src/app/Services/comments.service';
 export class CommentListComponent implements OnInit {
 
 comments: MemeComment[];
-  constructor(private commmentService: CommentsService) { }
+  constructor(private commmentService: CommentsService) {
+    this.commmentService.onChanged.subscribe(()=>{
+      this.getData();
+    });
+   }
   @Input() memeId: number;
 
   ngOnInit() {
+    this.getData();
+    console.log("comment list")
+    console.log(this.comments)
+  }
+  getData(){
     this.commmentService.getAllComments(this.memeId).subscribe(data=>{
       console.log("COMMENT DATA");
       console.log(data);
       this.comments = data;
     })
-    console.log("comment list")
-    console.log(this.comments)
   }
-  data = [];
+  // data = [];
 }

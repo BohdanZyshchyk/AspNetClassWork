@@ -23,8 +23,8 @@ export class MemeComponent implements OnInit {
     this.memeService.getMemeById(this.memeId).subscribe(data=>{
       this.meme = data;
     })
-
-   
   }
+
+  
 
 }

@@ -15,6 +15,7 @@ namespace BaseJWTApplication819.DataAccess.Entity
         public string Image { get; set; }
 
         public virtual List<CreatedMemes> CreatedMemes { get; set; }
+        public virtual List<UpvotedMemes> UpvotedMemes { get; set; }
         //public virtual List<Meme> UpvotedMemes { get; set; }
         public virtual List<Comment> Comments { get; set; }
         public virtual User User { get; set; }

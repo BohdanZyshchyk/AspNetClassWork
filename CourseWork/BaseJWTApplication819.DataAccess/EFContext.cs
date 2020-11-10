@@ -12,9 +12,10 @@ namespace BaseJWTApplication819.DataAccess
         public EFContext(DbContextOptions<EFContext> options) : base(options) { }
 
         public DbSet<UserAdditionalInfo> UserAdditionalInfos { get; set; }
-        public DbSet<Comment> Comments { get; set;}
-        public DbSet<Meme> Memes { get; set;}
-        public DbSet<CreatedMemes> CreatedMemes { get; set;}
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Meme> Memes { get; set; }
+        public DbSet<CreatedMemes> CreatedMemes { get; set; }
+        public DbSet<UpvotedMemes> UpvotedMemes { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -33,6 +34,16 @@ namespace BaseJWTApplication819.DataAccess
             builder.Entity<CreatedMemes>()
               .HasOne(u => u.Meme)
               .WithMany(k => k.CreatedMemes)
+              .HasForeignKey(u => u.MemeId);
+            builder.Entity<UpvotedMemes>()
+                .HasKey(k => new { k.MemeId, k.UserId });
+            builder.Entity<UpvotedMemes>()
+                .HasOne(u => u.User)
+                .WithMany(k => k.UpvotedMemes)
+                .HasForeignKey(u => u.UserId);
+            builder.Entity<UpvotedMemes>()
+              .HasOne(u => u.Meme)
+              .WithMany(k => k.UpvotedMemes)
               .HasForeignKey(u => u.MemeId);
             base.OnModelCreating(builder);
         }

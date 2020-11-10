@@ -39,16 +39,30 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
             var data = _mapper.Map<ICollection<MemeDTO>>(meme);
             return data.ToList();
         }
-        [HttpGet("upvote/{id}")]
-        public List<MemeDTO> upvoteMeme([FromRoute] int id)
+        [HttpGet("getupvote")]
+        public List<MemeDTO> getUpvotedMemes([FromRoute] string userId)
+        {
+            var meme = _context.UpvotedMemes.Where(x=> x.UserId == userId).Select(x=> x.Meme).ToList(); //devService.GetAllDevelopers().ToList();
+            var data = _mapper.Map<ICollection<MemeDTO>>(meme);
+            return data.ToList();
+        }
+        [HttpGet("getdownvote")]
+        public List<MemeDTO> getDownvotedMemes([FromRoute] string userId)
+        {
+            var meme = _context.UpvotedMemes.Where(x => x.UserId == userId).Select(x => x.Meme).ToList(); //devService.GetAllDevelopers().ToList();
+            var data = _mapper.Map<ICollection<MemeDTO>>(meme);
+            return data.ToList();
+        }
+        [HttpGet("upvote/{id:int}/{userId}")]
+        public List<MemeDTO> upvoteMeme([FromRoute] int id,[FromRoute] string userId)
         {
             var meme = _context.Memes.FirstOrDefault(x => x.Id == id);
             meme.Rating = meme.Rating+1;
             _context.SaveChanges();
             return getAllMemes();
         }
-        [HttpGet("downvote/{id}")]
-        public List<MemeDTO> downvoteMeme([FromRoute] int id)
+        [HttpGet("downvote/{id:int}/{userId}")]
+        public List<MemeDTO> downvoteMeme([FromRoute] int id, [FromRoute] string userId)
         {
             var meme = _context.Memes.FirstOrDefault(x => x.Id == id);
             meme.Rating = meme.Rating - 1;
