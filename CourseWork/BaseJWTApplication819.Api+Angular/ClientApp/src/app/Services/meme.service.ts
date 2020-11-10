@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Meme } from '../Models/meme.model';
 
@@ -11,12 +11,12 @@ export class MemeService {
   constructor(private http: HttpClient) { }
 
   memeUrl = "/api/Meme";
-
+  onUpvote = new EventEmitter<boolean>();
   getAllMemes(): Observable<Meme[]> {
     return this.http.get<Meme[]>(this.memeUrl);
   }
-  getUpvotedMemes():Observable<Meme[]> {
-    return this.http.get<Meme[]>(`${this.memeUrl}/getupvote`);
+  getUpvotedMemes(userId:string):Observable<Meme[]> {
+    return this.http.get<Meme[]>(`${this.memeUrl}/getupvote/${userId}`);
   }
   getDownvotedMemes():Observable<Meme[]> {
     return this.http.get<Meme[]>(`${this.memeUrl}/getdownvote`);

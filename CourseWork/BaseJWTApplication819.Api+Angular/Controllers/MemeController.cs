@@ -39,14 +39,14 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
             var data = _mapper.Map<ICollection<MemeDTO>>(meme);
             return data.ToList();
         }
-        [HttpGet("getupvote")]
+        [HttpGet("getupvote/{userId}")]
         public List<MemeDTO> getUpvotedMemes([FromRoute] string userId)
         {
             var meme = _context.UpvotedMemes.Where(x=> x.UserId == userId).Select(x=> x.Meme).ToList(); //devService.GetAllDevelopers().ToList();
             var data = _mapper.Map<ICollection<MemeDTO>>(meme);
             return data.ToList();
         }
-        [HttpGet("getdownvote")]
+        [HttpGet("getdownvote/{userId}")]
         public List<MemeDTO> getDownvotedMemes([FromRoute] string userId)
         {
             var meme = _context.UpvotedMemes.Where(x => x.UserId == userId).Select(x => x.Meme).ToList(); //devService.GetAllDevelopers().ToList();
@@ -58,6 +58,12 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
         {
             var meme = _context.Memes.FirstOrDefault(x => x.Id == id);
             meme.Rating = meme.Rating+1;
+            var user = _context.UserAdditionalInfos.FirstOrDefault(x => x.User.Id == userId);
+            _context.UpvotedMemes.Add(new UpvotedMemes
+            {
+                Meme = meme,
+                User = user
+            });
             _context.SaveChanges();
             return getAllMemes();
         }
@@ -66,6 +72,8 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
         {
             var meme = _context.Memes.FirstOrDefault(x => x.Id == id);
             meme.Rating = meme.Rating - 1;
+            var upvoted = _context.UpvotedMemes.Find(meme.Id, userId);
+            _context.UpvotedMemes.Remove(upvoted);
             _context.SaveChanges();
             return getAllMemes();
         }

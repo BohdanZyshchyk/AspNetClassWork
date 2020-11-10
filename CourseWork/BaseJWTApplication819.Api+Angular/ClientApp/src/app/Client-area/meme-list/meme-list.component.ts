@@ -19,30 +19,32 @@ interface ItemData {
 export class MemeListComponent implements OnInit {
 
   constructor(private memeService:MemeService,
-    private spinner: NgxSpinnerService) { }
+    private spinner: NgxSpinnerService) { 
+      this.memeService.onUpvote.subscribe(()=>{
+        this.loadData();
+        this.getUpvoted();
+      });
+
+    }
 
   memeList: Meme[];
   upVotedMeme: Meme[];
   userId:string;
   ngOnInit(): void {
     this.userId = jwt_decode(localStorage.getItem('token')).id;
-    // this.memeService.getAllMemes().subscribe(
-    //   data =>{
-    //     console.log(data);
-    //     this.memeList = data;
-    //     console.log("MEME")
-    //     console.log(this.memeList);
-    //   }
-    // )
     this.loadData();
     this.getUpvoted();
-    this.setUpvote();
+    // this.setUpvote();
   }
 
+  ngDoCheck(){
+    this.setUpvote();
+  }
+  
+
   getUpvoted(){
-    this.memeService.getUpvotedMemes().subscribe(
+    this.memeService.getUpvotedMemes(this.userId).subscribe(
       data=>{
-        console.log(data);
         this.upVotedMeme = data;
       }
     )
@@ -50,13 +52,13 @@ export class MemeListComponent implements OnInit {
   loadData(): void {
     this.memeService.getAllMemes().subscribe(
       data =>{
-        console.log(data);
         this.memeList = data;
       }
     )
   }
   setUpvote(){
     //TO DO check user logged
+    // this.memeService.onUpvote.emit(false);
     this.memeList.forEach(element => {
       if(this.upVotedMeme.find(x=> x.id == element.id))
       {
@@ -65,19 +67,30 @@ export class MemeListComponent implements OnInit {
     });
   }
   upvote(id:number){
-    console.log(id)
-    this.memeService.upvoteMeme(id, this.userId).subscribe(data=>{
-      this.memeList = data;
-    })
+    var meme = this.memeList.find(x=> x.id == id);
+    if(meme.isUpvoted)
+    {
+      this.downvote(id);
+      return;
+    }
+      this.memeService.upvoteMeme(id, this.userId).subscribe(data=>{
+        this.memeList = data;
+        this.memeService.onUpvote.emit(true);
+      });
+      this.getUpvoted();
   }
 
   downvote(id:number){
-    console.log(id)
     this.memeService.downvoteMeme(id, this.userId).subscribe(data=>{
       this.memeList = data;
+       this.getUpvoted();
+       this.memeService.onUpvote.emit(false);
     })
-  }
 
+    console.log("UPVOTED MEME");
+    console.log(this.upVotedMeme);
+    // this.setUpvote();
+  }
   
 
 }
