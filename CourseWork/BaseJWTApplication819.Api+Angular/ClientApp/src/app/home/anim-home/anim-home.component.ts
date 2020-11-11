@@ -7,7 +7,7 @@ import {
   transition,
   useAnimation 
 } from '@angular/animations';
-import { bounce } from 'ng-animate';
+import { bounce, flash, pulse,rubberBand} from 'ng-animate';
 @Component({
   selector: 'app-anim-home',
   templateUrl: './anim-home.component.html',
@@ -22,7 +22,8 @@ import { bounce } from 'ng-animate';
       transition(':leave', [
         animate('200ms ease-in', style({ transform: 'translateY(-100%)' }))
       ])
-    ])
+    ]),
+    trigger('bounce', [transition('* => *', useAnimation(rubberBand))])
   ]
 })
 export class AnimHomeComponent implements OnInit {
