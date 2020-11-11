@@ -21,10 +21,10 @@ const routes: Routes = [
     { path: 'memelist',  pathMatch: 'full', component: MemeListComponent },
     {
         path: 'admin-panel', canActivate: [AdminGuard], component: AdminAreaComponent,
-        children: [
-            { path: '', pathMatch: 'full', component: ProductListComponent },
-            { path: 'add-new-product', pathMatch: 'full', component: AddProductComponent }
-        ]
+        // children: [
+        //     { path: '', pathMatch: 'full', component: ProductListComponent },
+        //     { path: 'add-new-product', pathMatch: 'full', component: AddProductComponent }
+        // ]
     },
     { path: 'client-panel', canActivate: [LoggedInGuard], pathMatch: 'full', component: ClientAreaComponent }
 ];

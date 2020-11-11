@@ -2,18 +2,9 @@
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
     <div class="logo"></div>
     <ul nz-menu nzTheme="dark" nzMode="inline">
-      <li nz-submenu nzTitle="User" nzIcon="user">
-        <ul>
-          <li nz-menu-item>Tom</li>
-          <li nz-menu-item>Bill</li>
-          <li nz-menu-item>Alex</li>
-        </ul>
+      <li nz-submenu nzTitle="Users" nzIcon="user">
       </li>
-      <li nz-submenu nzTitle="Products" nzIcon="shopping-cart">
-        <ul>
-          <li nz-menu-item [routerLink]="['/admin-panel']" >List users</li>
-          <li nz-menu-item [routerLink]="['/admin-panel/add-new-product']" >Add new Product</li>
-        </ul>
+      <li nz-submenu nzTitle="Memes" nzIcon="shopping-cart">
       </li>
       <li nz-menu-item>
         <i nz-icon nzType="file"></i>
