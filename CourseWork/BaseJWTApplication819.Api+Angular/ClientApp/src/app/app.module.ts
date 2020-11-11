@@ -29,6 +29,9 @@ import { MemeComponent } from './Client-area/meme/meme.component';
 import { CommentListComponent } from './Client-area/meme/comment-list/comment-list.component';
 import { CommentComponent } from './Client-area/meme/comment/comment.component';
 import { AddCommentComponent } from './Client-area/meme/add-comment/add-comment.component';
+import { AddMemeComponent } from './Client-area/meme/add-meme/add-meme.component';
+import { AnimHomeComponent } from './home/anim-home/anim-home.component';
+
 
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
@@ -61,7 +64,9 @@ const configNotifier: NotifierOptions = {
     MemeComponent,
     CommentListComponent,
     CommentComponent,
-    AddCommentComponent
+    AddCommentComponent,
+    AddMemeComponent,
+    AnimHomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -72,9 +77,9 @@ const configNotifier: NotifierOptions = {
     NgxSpinnerModule,
     BrowserAnimationsModule,
     DemoNgZorroAntdModule,
+    
   ],
   providers: [NgxSpinnerService,
   {provide: NZ_ICONS, useValue:icons}],
-  bootstrap: [AppComponent]
-})
+  bootstrap: [AppComponent]})
 export class AppModule { }

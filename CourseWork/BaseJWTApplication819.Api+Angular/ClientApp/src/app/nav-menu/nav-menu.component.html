@@ -28,8 +28,14 @@
             [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark">Logout</a>
           </li>
+          <li *ngIf="isLogin == true">
+            <button nz-button nzType="primary" (click)="showModal()">
+              <span>+ Upload</span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
+ <app-add-meme [isVisible]="isVisible"></app-add-meme> 

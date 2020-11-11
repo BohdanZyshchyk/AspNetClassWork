@@ -8,7 +8,6 @@ namespace BaseJWTApplication819.DataAccess.Entity
     {
         public int MemeId { get; set; }
         public string UserId { get; set; }
-
         public virtual Meme Meme { get; set; }
         public virtual UserAdditionalInfo User { get; set; }
     }

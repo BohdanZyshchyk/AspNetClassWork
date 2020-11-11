@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../Services/auth.service';
+import { MemeService } from '../Services/meme.service';
 
 @Component({
   selector: 'app-nav-menu',
@@ -10,7 +11,13 @@ export class NavMenuComponent implements OnInit {
   isExpanded = false;
   isLogin: boolean = false;
   isAdmin: boolean = false;
-  constructor(private authService: AuthService) { }
+  isVisible: boolean = false;
+  constructor(private authService: AuthService,
+    private memeServ:MemeService) { 
+      this.memeServ.onAdd.subscribe(()=>{
+        this.isVisible = false;
+      });
+    }
 
   ngOnInit() {
     var token = localStorage.getItem('token');
@@ -42,4 +49,7 @@ export class NavMenuComponent implements OnInit {
   toggle() {
     this.isExpanded = !this.isExpanded;
   }
+  showModal(){
+    this.isVisible= true;
+   }
 }

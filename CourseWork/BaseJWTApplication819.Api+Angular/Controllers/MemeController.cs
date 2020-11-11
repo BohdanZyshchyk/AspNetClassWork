@@ -9,6 +9,7 @@ using AutoMapper;
 using BaseJWTApplication819.Api_Angular.Helper;
 using BaseJWTApplication819.DataAccess;
 using BaseJWTApplication819.DataAccess.Entity;
+using BaseJWTApplication819.DTO.Helper;
 using BaseJWTApplication819.DTO.Models.Meme;
 using BaseJWTApplication819.DTO.Models.Results;
 using Microsoft.AspNetCore.Authorization;
@@ -84,6 +85,49 @@ namespace BaseJWTApplication819.Api_Angular.Controllers
             return _mapper.Map<MemeDTO>(meme);
         }
         [HttpPost]
+        
+        [HttpPost]
+        public ResultDTO AddMeme([FromBody] MemeDTO memeDTO, [FromRoute] string userId)
+        {
+            try
+            {
+                if(!ModelState.IsValid)
+                {
+                    return new ResultErrorDTO
+                    {
+                        Status = 403,
+                        Message = "ERROR",
+                        Errors = CustomValidator.GetErrorsByModel(ModelState)
+                    };
+                }
+                var meme = new Meme()
+                {
+                    Date = memeDTO.Date,
+                    Image = memeDTO.Image,
+                    Title = memeDTO.Title,
+                    Rating = 0 
+                };
+
+                _context.Memes.Add(meme);
+                _context.SaveChanges();
+                var creator = _context.UserAdditionalInfos.FirstOrDefault(x => x.User.Id == userId);
+                _context.CreatedMemes.Add(new CreatedMemes
+                {
+                    Meme = meme,
+                    User = creator
+                });
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return new ResultDTO
+            {
+                Status = 200,
+                Message = "OK"
+            };
+        }
         [Route("Upload/{id}")]
         public ResultDTO UploadImage([FromRoute] string id, [FromForm(Name = "file")] IFormFile image)
         {

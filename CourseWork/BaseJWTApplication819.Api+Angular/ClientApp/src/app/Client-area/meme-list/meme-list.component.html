@@ -20,7 +20,7 @@
             <button nz-button nz-dropdown [nzDropdownMenu]="menu" nzType="default" [nzSize]="size"><i class="fas fa-ellipsis-h"></i></button>
             <nz-dropdown-menu nzTrigger="click" #menu="nzDropdownMenu">
                 <ul nz-menu>
-                  <li nz-menu-item>Copy link</li>
+                  <li nz-menu-item (click)="copyLink(item.id)">Copy link</li>
                   <li nz-menu-item>Email</li>
                 </ul>
               </nz-dropdown-menu>
